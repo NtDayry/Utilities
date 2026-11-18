@@ -1,0 +1,9 @@
+[
+ {"cfg":{"id":"T1","name":" Tank ","kind":"tank","tanks":[{"diameter_m":2,"height_m":2.5},{"diameter_m":"3","height_m":2,"offset_cm":"-35","name":""}],"sensorTank":1.5,"levelUnit":"percent","lowPct":50,"highPct":40,"waterColor":"#ABCDEF","pumps":[{"drive":"magnetic"},{"name":"P","path":"pump2","faultPath":"f.ol"}],"sensors":{"meterTotal":{"enabled":true},"inletValve":{"enabled":true,"path":"v"}},"broker":{"url":"ws://h:1","username":" u "}},
+  "raw":{"water_level":{"level_cm":"55.5"},"flow_meter":{"volumn":12},"v":"Closed","controls":{"pump1_on":"RUNNING"},"pump2":{"run":0,"on":1,"hz":"48","amp":true,"trip":"on","modbus_ok":1},"f":{"ol":0},"a.b":1,"n":{"deep":{"x":1.5,"y":false,"z":[1],"w":null}}}},
+ {"cfg":{"id":"pond_9","name":"P","kind":"pond","tanks":[{"width_m":0,"length_m":-1,"height_m":"x"},{},{},{},{}],"levelUnit":"mm","sensors":{"level":{"enabled":true,"path":"lv","unit":7}},"pumps":[{"path":"pp"}]},
+  "raw":{"lv":"1e3","pp":{"running":null,"run":"stop","alarm":"0","fault":2}}},
+ {"cfg":{"id":"x","name":"m","levelUnit":"m","tanks":[{"diameter_m":1,"height_m":1}],"pumps":[{"path":"a.b"}]},"raw":{"water_level":{"level_cm":-5},"a":{"b":"yes"}}},
+ {"cfg":{"id":"BAD id","name":"x"},"raw":{}},
+ {"cfg":{"id":"ok","name":""},"raw":{}}
+]

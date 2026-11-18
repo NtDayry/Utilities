@@ -1,0 +1,10 @@
+# ใช้กับ build context ../frontend-utilities (BuildKit อ่านไฟล์ <Dockerfile>.dockerignore ข้าง Dockerfile)
+node_modules
+dist
+.git
+_backup
+_removed
+**/.env
+**/.env.*
+!.env.example
+*.log

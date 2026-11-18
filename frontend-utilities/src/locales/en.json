@@ -1,0 +1,2665 @@
+{
+  "swal": {
+    "success": {
+      "title": "Success!",
+      "text": "Operation completed successfully"
+    },
+    "error": {
+      "title": "Error occurred",
+      "text": "Something went wrong. Please try again"
+    },
+    "warning": {
+      "title": "Warning",
+      "text": "Please double-check the information"
+    },
+    "confirm": {
+      "title": "Confirm Action",
+      "text": "Are you sure?"
+    },
+    "toast": {
+      "success_title": "Operation completed"
+    },
+    "buttons": {
+      "ok": "OK",
+      "confirm": "Confirm",
+      "cancel": "Cancel"
+    }
+  },
+  "header": {
+    "dropdown": {
+      "role_title": "Role",
+      "user_account": "User Account",
+      "settings": "Settings",
+      "support": "Support",
+      "logout": "Logout"
+    }
+  },
+  "factory_layout3d": {
+    "group_buildings": "Buildings",
+    "group_objects": "Other facilities",
+    "building": "Building",
+    "camera": "Camera view",
+    "kpi_height_short": "H",
+    "time_live": "Now",
+    "time_live_hint": "Follow server time (drag the slider to set manually)",
+    "loading": "Loading 3D model…",
+    "load_error": "Failed to load the 3D model. Please refresh the page.",
+    "title": "3D Factory Layout",
+    "subtitle": "True-scale 1:1 model · tap a building for details",
+    "hint": "Drag to rotate · scroll / pinch to zoom",
+    "view_ov": "Overview",
+    "view_top": "Top",
+    "view_side": "Side",
+    "view_gate": "Gate",
+    "labels": "Labels",
+    "solar": "Solar",
+    "auto_rotate": "Auto rotate",
+    "icons": "Icons & values",
+    "settings": "Settings",
+    "time": "Time",
+    "unit_m": "m",
+    "unit_sqm": "m²",
+    "unit_cum": "m³",
+    "kpi_size": "Width × length",
+    "kpi_height": "Height ({{floors}} floors × {{floorHeight}} m)",
+    "kpi_base_area": "Footprint",
+    "kpi_gfa": "Gross floor area",
+    "kpi_volume": "Approx. volume",
+    "view_details": "View details",
+    "settings_page": {
+      "sensor": "Sensor",
+      "main_value": "Main value",
+      "show_on_layout": "Show on layout",
+      "show_alarm": "Show alarm",
+      "details_on_click": "Details on click",
+      "factory_layout_settings": "Factory Layout Settings",
+      "enable_sensors_on_the_3d_layout": "Enable sensors on the 3D layout · choose the details shown when a point is clicked",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "back_to_layout": "← Back to layout",
+      "enable_all": "Enable all",
+      "disable_all": "Disable all",
+      "reset_to_defaults": "Reset to defaults",
+      "show_alarms_on_layout": "Show alarms on layout",
+      "icon_and_value_label_blink_red": "Icon and value label blink red when out of range · turn off per sensor in the \"Show alarm\" column",
+      "on": "On",
+      "off": "Off",
+      "groupcount_length_enabled": "{{groupCount}}/{{length}} enabled",
+      "whole_group": "Whole group",
+      "select_all": "Select all",
+      "clear": "Clear",
+      "settings_are_saved_automatically_in_this": "Settings are saved automatically in this browser and apply to the layout immediately."
+    },
+    "scene": {
+      "building_dims": "{{w}}×{{l}} m · {{h}} m high"
+    }
+  },
+  "navbar": {
+    "utilities_menu": "Utilities Systems",
+    "system_menu": "System & Management",
+    "purified_water": "Purified Water",
+    "pw_dashboard": "PW Dashboard",
+    "factory_layout": "3D Factory Layout",
+    "water_supply": "Water Supply & Pumps",
+    "water_supply_dashboard": "Water Overview",
+    "water_supply_details": "Water Supply Details",
+    "water_supply_reports": "Water Supply Reports",
+    "water_supply_alarms": "Water Supply Alarms",
+    "water_supply_settings": "Water Supply Control & Settings",
+    "electrical_system": "Electrical & Power",
+    "electrical_dashboard": "Power Meter Dashboard",
+    "electrical_reports": "Energy Consumption Reports",
+    "electrical_alarms": "Electrical Alarms",
+    "electrical_settings": "Electrical Alarm Settings",
+    "wastewater": "Wastewater Treatment",
+    "wastewater_dashboard": "Wastewater Dashboard",
+    "wastewater_reports": "Wastewater Reports",
+    "wastewater_alarms": "Wastewater Alarms",
+    "wastewater_settings": "Wastewater Alarm Settings",
+    "dashboard": "Dashboard",
+    "reports": "Reports",
+    "alarm_reports": "Alarm Reports",
+    "settings_devices": "Settings Devices",
+    "audit_logs": "Audit Logs",
+    "user_managment": "User Management",
+    "system_monitor": "System Monitor",
+    "backup_restore": "Backup & Restore",
+    "logout": "Logout",
+    "water_supply_alarm_settings": "Water Supply Alarm Settings"
+  },
+  "auth": {
+    "login": {
+      "title": "Sign In",
+      "subtitle": "Enter your username and password to log in!",
+      "field": {
+        "username": "Username",
+        "place_username": "Enter username...",
+        "password": "Password",
+        "place_password": "Enter password..."
+      },
+      "keep_logged_in": "Keep me logged in",
+      "forgot_password": "Forgot Password?",
+      "no_account": "Don't have an account?",
+      "register": "Sign Up",
+      "button": {
+        "submit": "Log In",
+        "wait": "Logging in..."
+      }
+    },
+    "register": {
+      "title": "Register",
+      "subtitle": "Enter your username, password, and other information to sign up!",
+      "field": {
+        "fname": "First Name",
+        "place_fname": "Enter first name...",
+        "lname": "Last Name",
+        "place_lname": "Enter last name...",
+        "department": "Department",
+        "place_department": "Enter department...",
+        "username": "Username",
+        "place_username": "Enter username...",
+        "password": "Password",
+        "place_password": "Enter password...",
+        "confirm_password": "Confirm Password",
+        "place_confirm_password": "Confirm password..."
+      },
+      "privacy_notice": {
+        "prefix": "By creating an account, you agree to our",
+        "terms": "Terms & Conditions",
+        "and": "and",
+        "privacy": "Privacy Policy",
+        "suffix": ""
+      },
+      "has_account": "Already have an account?",
+      "login": "Log In",
+      "button": {
+        "submit": "Register",
+        "wait": "Registering..."
+      },
+      "error_alert": "An error occurred during registration",
+      "error_username_exists": "This username already exists",
+      "success_alert": "Registration successful! You can now log in"
+    },
+    "hint": {
+      "name_th_en_no_space": "Thai and English letters only **no spaces**",
+      "username_no_space": "English letters, numbers and special characters only **no spaces**",
+      "accept_terms": "Please accept the terms and conditions",
+      "username_taken": "This username is already taken",
+      "password_chars": "English letters, numbers and special characters only, no spaces",
+      "password_mismatch": "Passwords do not match",
+      "current_password_wrong": "Current password is incorrect",
+      "name_th_en_no_space_plain": "Thai and English letters only, no spaces",
+      "username_chars": "Only a-z A-Z 0-9 and . _ -"
+    },
+    "error_generic": "An error occurred"
+  },
+  "page": {
+    "audit_logs": {
+      "title": "Audit logs",
+      "subtitle": "Review user actions and the request metadata recorded by the server.",
+      "filter": {
+        "from": "From",
+        "to": "To",
+        "action": "Action",
+        "entity": "Entity",
+        "all_actions": "All Actions",
+        "all_entities": "All Entities"
+      },
+      "kpi": {
+        "total_records": "Total Records",
+        "creates": "Creates (Page)",
+        "updates": "Updates (Page)",
+        "deletes": "Deletes (Page)",
+        "auth": "Auth (Page)"
+      },
+      "table": {
+        "header": {
+          "created_at": "Time",
+          "username": "User",
+          "action": "Action",
+          "entity": "Entity",
+          "entity_id": "Entity ID",
+          "ip_address": "IP",
+          "user_agent": "User-Agent"
+        },
+        "detail": "Showing [ci] of [ti] items",
+        "search": "Search...",
+        "view_details": "View details",
+        "row_per_page": {
+          "display": "Rows per page:",
+          "row": "Showing [cr] of [tr] entries"
+        },
+        "empty": {
+          "title": "Audit logs not found",
+          "subtitle": "Try modifying your search conditions or try again later."
+        }
+      },
+      "modal": {
+        "title": "View Old Data / New Data",
+        "user": "User",
+        "date": "Date",
+        "ip": "IP",
+        "user_agent": "User Agent",
+        "old_data_title": "Old Data",
+        "old_data_subtitle": "Data before change",
+        "new_data_title": "New Data",
+        "new_data_subtitle": "Data after change",
+        "no_data": "No data available",
+        "cannot_display": "Cannot display this data"
+      },
+      "swal": {
+        "fetch_error": "Failed to fetch audit log data",
+        "no_data_title": "No data",
+        "no_data_msg": "No audit log data found for the selected export filters",
+        "export_csv_success": "CSV data exported successfully",
+        "export_csv_error": "Failed to export CSV data",
+        "export_excel_success": "Excel data exported successfully",
+        "export_excel_error": "Failed to export Excel data"
+      }
+    },
+    "system_monitor": {
+      "title": "System Monitor",
+      "subtitle": "Real-time status of CPU, RAM, Disk, Network, GPU, and scale instance worker queues.",
+      "container_metrics": {
+        "title": "Running Containers",
+        "subtitle": "Monitor running containers in real time"
+      },
+      "host_metrics": {
+        "title": "Host Hardware",
+        "subtitle": "Monitor host CPU, RAM and disk status in real time"
+      }
+    },
+    "users_management": {
+      "title": "Manage users",
+      "subtitle": "Edit your personal information, such as your first name, password, and more.",
+      "table": {
+        "header": {
+          "user_information": "User information",
+          "departments": "Departments",
+          "permissions": "Permissions",
+          "status": "Status",
+          "menu": "Menu"
+        },
+        "detail": "Showing [ci] of [ti] items",
+        "search": "Search...",
+        "row_per_page": {
+          "display": "Display",
+          "row": "Row [cr] of [tr]"
+        },
+        "empty": {
+          "title": "Items not found",
+          "subtitle": "Try modifying your search conditions or adding a new data."
+        },
+        "no_permission": "** Unauthorized **",
+        "tooltip": {
+          "edit_role": "Edit user permissions",
+          "no_permission_role": "No permission to edit user permissions",
+          "edit_status": "Edit user status",
+          "no_permission_status": "No permission to edit user status",
+          "reset_password": "Reset password",
+          "reset_attempts": "Reset Attempts",
+          "edit_user": "Edit user information",
+          "delete_user": "Delete user"
+        }
+      },
+      "toast": {
+        "no_permission_reset_password": "You do not have permission to reset password",
+        "no_permission_reset_attempts": "You do not have permission to reset login attempts",
+        "no_permission_edit_status": "You do not have permission to edit user status",
+        "no_permission_edit_role": "You do not have permission to edit user permissions",
+        "no_permission_edit_user": "You do not have permission to edit user information",
+        "no_permission_delete_user": "You do not have permission to delete user",
+        "reset_password_success": "Password reset successfully",
+        "new_password_text": "The new password for [fullname] is: [password]",
+        "reset_password_failed": "Unable to reset password!",
+        "reset_attempts_success": "Sign in attempts reset successfully",
+        "reset_attempts_failed": "Unable to reset Sign in attempts!",
+        "edit_status_success": "User status changed successfully",
+        "edit_status_failed": "Unable to change user status!",
+        "edit_role_success": "User permissions changed successfully",
+        "edit_role_failed": "Unable to change user permissions!",
+        "delete_user_failed": "Unable to delete user!"
+      },
+      "dialog": {
+        "reset_password": {
+          "title": "Reset Password",
+          "text": "Do you want to reset the password for [fullname]?",
+          "confirm": "Confirm!",
+          "cancel": "Cancel"
+        },
+        "reset_attempts": {
+          "title": "Reset Sign In Attempts",
+          "text": "Do you want to reset Sign in attempts for [fullname]?"
+        },
+        "edit_status": {
+          "title": "Select User Status",
+          "text": "Change status of [fullname] from [status]",
+          "active": "Active (Allowed)",
+          "pending": "Pending (Awaiting action)",
+          "blocked": "Blocked (Suspend usage)",
+          "cancel": "Cancel"
+        },
+        "edit_role": {
+          "title": "Select User Role",
+          "text": "Change permissions of [fullname] from [role]",
+          "cancel": "Cancel"
+        },
+        "delete_user": {
+          "title": "Confirm User Deletion",
+          "text": "Account: [username] ([fullname])",
+          "confirm": "Confirm!",
+          "cancel": "Cancel"
+        }
+      },
+      "validation": {
+        "alpha_space": "Only Thai and English letters are allowed, no spaces",
+        "username_allowed": "Only a-z A-Z 0-9 and . _ - are allowed"
+      },
+      "status_not_found": "Selected status not found",
+      "role_not_found": "Selected role not found"
+    },
+    "users_profile": {
+      "title": "Profile",
+      "subtitle": "Edit your personal information, such as your first name, password, and more.",
+      "profile_image_card": {
+        "username": "Account Name"
+      },
+      "profile_card": {
+        "title": "Edit your profile",
+        "subtitle": "Update your personal information",
+        "field": {
+          "fname": "First Name",
+          "place_fname": "Enter first name...",
+          "lname": "Last Name",
+          "place_lname": "Enter last name...",
+          "username": "Username",
+          "place_username": "Enter username...",
+          "department": "Department",
+          "place_department": "Enter department..."
+        },
+        "button": {
+          "edit": "Edit",
+          "cancel": "Cancel",
+          "submit": "Save",
+          "wait": "Saving..."
+        }
+      },
+      "password_card": {
+        "title": "Change your password",
+        "subtitle": "Update your password for security",
+        "field": {
+          "old_password": "Current Password",
+          "place_old_password": "Enter current password...",
+          "new_password": "New Password",
+          "place_new_password": "Enter new password...",
+          "confirm_password": "Confirm Password",
+          "place_confirm_password": "Confirm your password..."
+        },
+        "button": {
+          "edit": "Edit",
+          "cancel": "Cancel",
+          "submit": "Save",
+          "wait": "Saving..."
+        }
+      },
+      "avatar_updated": "Profile picture updated"
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Manage permissions, access control, and system backup",
+      "meta_title": "Settings - System",
+      "meta_description": "Manage role permissions, access control, and system backup & recovery",
+      "panel": {
+        "select_role": {
+          "title": "Select role",
+          "subtitle": "Load role and permission data from the backend",
+          "role_label": "Role",
+          "role_placeholder": "-- Select role --",
+          "roles_count": "Roles",
+          "permissions_count": "Permissions",
+          "current_user": "Current logged-in user",
+          "manage_status": "Management access",
+          "edit": "Editable",
+          "read_only": "Read only",
+          "reload": "Reload",
+          "invalidate_cache": "Invalidate cache",
+          "invalidate_wait": "Invalidating...",
+          "preload_cache": "Preload cache",
+          "preload_wait": "Preloading..."
+        },
+        "permissions": {
+          "title": "Permissions of role: {{role}}",
+          "sample_api": "Test endpoint:",
+          "save": "Save",
+          "save_wait": "Saving...",
+          "select_all": "Select all",
+          "clear_all": "Clear all",
+          "full_access_button": "Full access",
+          "selected": "Selected",
+          "available": "Available",
+          "status": "Status",
+          "loading": "Loading data...",
+          "dirty": "There are unsaved changes",
+          "synced": "Data is synced with backend",
+          "search_title": "Search permission",
+          "search_subtitle": "Type to filter the list below",
+          "search_placeholder": "e.g. edit_user, reset_password",
+          "list_title": "Permissions list",
+          "list_subtitle": "Toggle permissions for the selected role",
+          "full_access": "Full access (*)",
+          "empty_search": "No permissions match the search",
+          "permission_key": "permission key"
+        },
+        "messages": {
+          "loaded_role": "Loaded permissions for role {{role}} successfully",
+          "saved_role": "Saved permissions for role {{role}} successfully",
+          "invalidated_role": "Invalidated cache for role {{role}} successfully",
+          "preloaded_cache": "Preloaded cache successfully ({{count}} roles)"
+        },
+        "errors": {
+          "load_bootstrap": "Load roles and permissions failed",
+          "load_permissions": "Load permissions failed",
+          "save_permissions": "Save permissions failed",
+          "invalidate_cache": "Invalidate cache failed",
+          "preload_cache": "Preload cache failed",
+          "forbidden": "You do not have permission to manage permissions",
+          "role_not_found": "Role not found"
+        }
+      },
+      "tabs": {
+        "permissions": "Permissions & Access Control",
+        "backup": "System Backup & Recovery"
+      },
+      "permissions": {
+        "forbidden": "You do not have permission to manage permissions",
+        "not_found": "The requested data was not found",
+        "sort_by": "Sort by"
+      }
+    },
+    "support": {
+      "meta_title": "Support | Engineering Team",
+      "meta_description": "Support page for engineering department credits and contact information.",
+      "badge": "Support Center",
+      "title": "Engineering team ready to help anytime",
+      "subtitle": "This page is created to give credit to the engineering department and the main contact channel for quick help requests.",
+      "contact": {
+        "label": "Department contact",
+        "description": "If you need help, please contact the engineering department at this number."
+      },
+      "status": {
+        "label": "Service status",
+        "value": "Ready to take requests",
+        "description": "For urgent issues, call directly or go back to the home page to continue."
+      },
+      "call_button": "02-3169419 (175)",
+      "home_button": "Go to Home",
+      "members": {
+        "title": "Engineering team members",
+        "subtitle": "List of engineering team members who are available to provide support and maintain the system at all times"
+      }
+    },
+    "reports": {
+      "title": "Data Report",
+      "subtitle": "Detailed Information of Purified Water System",
+      "meta_title": "Water System Data Report",
+      "meta_description": "Water System Data Report",
+      "filter": {
+        "from": "From",
+        "to": "To",
+        "period": "Period time"
+      },
+      "period_options": {
+        "30m": "30 minute",
+        "1h": "1 hour",
+        "1d": "1 day",
+        "1mo": "1 month",
+        "1y": "1 year"
+      },
+      "toolbar": {
+        "combined_table": "Combined Table",
+        "charts": "Charts",
+        "export_csv": "Export CSV",
+        "export_excel": "Export Excel"
+      },
+      "waiting_for_data": "Waiting for data...",
+      "table": {
+        "loading_data": "Loading table data...",
+        "loading_page": "Loading page {{page}}...",
+        "no_data": "No data available for table view.",
+        "title": "Combined Sensor Data Table",
+        "subtitle": "Total sensors: {{sensors}} | Showing {{start}} – {{end}} of {{total}} entries",
+        "header": {
+          "timestamp": "Timestamp"
+        },
+        "footer": {
+          "min": "MIN (All Range)",
+          "max": "MAX (All Range)",
+          "avg": "AVG (All Range)"
+        },
+        "row_per_page": {
+          "display": "Rows per page:",
+          "row": "Showing [cr] of [tr] entries"
+        }
+      },
+      "charts": {
+        "live": "Live:",
+        "color_picker_title": "Custom Chart Color",
+        "color": "Color",
+        "chart_color": "Chart Color",
+        "reset": "Reset",
+        "custom_color": "Custom:",
+        "min": "min",
+        "max": "max",
+        "avg": "avg",
+        "show_details": "Show Details",
+        "hide_details": "Hide Details"
+      }
+    },
+    "alarm_reports": {
+      "title": "Alarm Data Report",
+      "subtitle": "Filter, View, and Export Alarm & Alert Events",
+      "meta_title": "Alarm Reports & History",
+      "meta_description": "Alarm Data & Alert History Report",
+      "filter": {
+        "from": "From",
+        "to": "To",
+        "device": "Device",
+        "all_devices": "All Devices",
+        "severity": "Severity",
+        "all_severities": "All Severities",
+        "critical": "Critical",
+        "warning": "Warning",
+        "info": "Info",
+        "status": "Status",
+        "all_status": "All Status",
+        "active_only": "Active Only",
+        "ended_only": "Ended Only",
+        "acknowledged": "Acknowledged",
+        "unacknowledged": "Unacknowledged"
+      },
+      "kpi": {
+        "total_alarms": "Total Alarms",
+        "active": "Active (Page)",
+        "critical": "Critical (Page)",
+        "warning": "Warning (Page)",
+        "info": "Info (Page)",
+        "ack": "Ack (Page)"
+      },
+      "table": {
+        "title": "Alarm Records ({{count}})",
+        "header": {
+          "id": "ID",
+          "device_metric": "Device / Metric",
+          "severity": "Severity",
+          "trigger_value": "Trigger Value",
+          "started_at": "Started At",
+          "ended_at": "Ended At",
+          "duration": "Duration",
+          "acknowledged": "Acknowledged"
+        },
+        "badge": {
+          "active": "ACTIVE"
+        },
+        "action": {
+          "acknowledge": "Acknowledge",
+          "acknowledged": "Acknowledged",
+          "unacknowledged": "Unacknowledged"
+        },
+        "empty": {
+          "title": "No alarm records found",
+          "subtitle": "Try adjusting your filters or date range"
+        },
+        "row_per_page": {
+          "display": "Rows per page:",
+          "row": "Showing [cr] of [tr] entries"
+        }
+      },
+      "swal": {
+        "ack_confirm_title": "Confirm Alarm Acknowledgment",
+        "ack_confirm_msg": "Do you want to acknowledge the alert for {{device}} - {{metric}}?",
+        "ack_confirm_btn": "Acknowledge",
+        "cancel_btn": "Cancel",
+        "ack_success": "Alarm acknowledged successfully",
+        "ack_error": "Failed to acknowledge alarm",
+        "export_csv_success": "CSV data exported successfully",
+        "export_csv_error": "Failed to export CSV data",
+        "export_excel_success": "Excel data exported successfully",
+        "export_excel_error": "Failed to export Excel data"
+      },
+      "chart": {
+        "trend_title": "Alarms over time",
+        "trend_sub": "By severity · for the selected period and filters",
+        "truncated": "(chart uses {{n}} of {{total}} events — narrow the period to see all)",
+        "top_title": "Most frequent sensors",
+        "top_sub": "Red = critical · orange = warning · blue = info"
+      }
+    },
+    "settings_devices": {
+      "title": "Device & Sensor Settings",
+      "subtitle": "Configure signal scaling, unit decoding, and sensor alarm rules",
+      "ws": {
+        "connected": "WebSocket Live Stream Connected",
+        "disconnected": "WebSocket Disconnected"
+      },
+      "loading_sensor_configs": "Loading sensor configurations…",
+      "group": {
+        "move_up": "Move Group Up",
+        "move_down": "Move Group Down",
+        "save_all": "Save All"
+      },
+      "table": {
+        "header": {
+          "order": "Order",
+          "metric": "Metric",
+          "raw_value": "Raw Value",
+          "live_value": "Live Value",
+          "decode_type": "Decode Type",
+          "raw_min": "Raw Min",
+          "raw_max": "Raw Max",
+          "range_min": "Range Min",
+          "range_max": "Range Max",
+          "unit": "Unit",
+          "decimal_places": "Decimal Places",
+          "adjust_4_20ma": "Adjust 4-20mA",
+          "alarm_config": "Alarm Config",
+          "mqtt_source": "MQTT Source"
+        },
+        "move_metric_up": "Move Metric Up",
+        "move_metric_down": "Move Metric Down",
+        "title_adjust": "Open Analog 4-20mA Calibration & Adjust Menu",
+        "btn_adjust": "Adjust",
+        "title_alarm": "Open Sensor Alarm Rule Configuration",
+        "btn_alarm": "Alarm",
+        "btn_save": "Save",
+        "btn_saving": "Saving"
+      },
+      "swal": {
+        "unauthorized_title": "Unauthorised",
+        "unauthorized_msg": "Please log in again.",
+        "forbidden_title": "Forbidden",
+        "forbidden_msg": "You do not have permission to view sensor configs.",
+        "error_title": "Error",
+        "error_msg": "Failed to load sensor configurations.",
+        "saved_row": "Saved — {{metric}}",
+        "forbidden_edit": "You do not have permission to edit sensor configs.",
+        "invalid_data_title": "Invalid data",
+        "invalid_data_msg": "Check the values and try again.",
+        "save_failed_title": "Save failed",
+        "save_failed_msg": "Could not save sensor configuration.",
+        "saved_calibration": "Saved calibration — {{label}}",
+        "invalid_calibration_msg": "Check the calibration values and try again.",
+        "save_calibration_failed_msg": "Could not save sensor calibration.",
+        "no_changes": "No changes to save",
+        "group_order_updated": "Group order updated",
+        "reorder_failed_title": "Reorder failed",
+        "reorder_failed_msg": "Failed to update group order.",
+        "reorder_unavailable_title": "Reorder unavailable",
+        "reorder_unavailable_msg": "Sensor registry entries not found for these metrics.",
+        "metric_order_updated": "Metric order updated",
+        "reorder_metric_failed_msg": "Failed to update metric order."
+      },
+      "analog_modal": {
+        "badge": "Analog 4-20mA Calibration",
+        "tabs": {
+          "tune": "Fine-Tune Parameters",
+          "test": "Signal Simulator & Tester",
+          "twopoint": "2-Point Field Calibration"
+        },
+        "tune": {
+          "modbus_adc_range": "Modbus ADC Raw Range",
+          "ma_signal": "4mA ~ 20mA Signal",
+          "raw_min": "Raw Min (4mA)",
+          "raw_max": "Raw Max (20mA)",
+          "scaled_output_range": "Scaled Output Range ({{unit}})",
+          "display_value": "Display Value",
+          "range_min": "Range Min (at 4mA)",
+          "range_max": "Range Max (at 20mA)",
+          "unit_label": "Unit",
+          "unit_placeholder": "e.g. µS/cm, °C, m³/h",
+          "decimal_places_label": "Decimal Places",
+          "quick_zero_trim": "Quick Zero Trim (Offset Adjustment):",
+          "shift_range": "Shift Min/Max range",
+          "reset_defaults": "Reset Defaults"
+        },
+        "test": {
+          "simulate_signal": "Simulate Modbus Raw ADC Signal:",
+          "raw_count": "Raw: {{raw}} count ({{ma}} mA)",
+          "simulated_output_value": "Simulated Output Value",
+          "current_label": "Current: {{ma}} mA • Signal Status: ",
+          "status_sensor_fault_break": "Sensor Fault / Wire Break (<3.8mA)",
+          "status_under_range": "Under-range (<4mA)",
+          "status_sensor_fault_high": "Sensor Fault (>20.5mA)",
+          "status_over_range": "Over-range (>20mA)",
+          "status_normal": "Normal (4-20mA)",
+          "range_min_label": "Range Min: {{val}} {{unit}}",
+          "range_max_label": "Range Max: {{val}} {{unit}}"
+        },
+        "twopoint": {
+          "desc": "Enter the actual measured ADC raw counts from Modbus and the physical field references (Zero & Span) to let the system automatically calculate calibration parameters.",
+          "point1_title": "Point 1: Low / Zero Calibration (4mA)",
+          "point2_title": "Point 2: High / Span Calibration (20mA)",
+          "measured_raw": "Measured Raw Count",
+          "target_val": "Target Engineering Value ({{unit}})",
+          "apply_btn": "Apply 2-Point Calculation to Config"
+        },
+        "actions": {
+          "cancel": "Cancel",
+          "save": "Save & Apply Config",
+          "saving": "Saving…"
+        }
+      },
+      "alarm_modal": {
+        "badge": "Sensor Alarm Rule (alert_rules)",
+        "tabs": {
+          "thresholds": "Threshold Settings",
+          "notifications": "Notifications & Log"
+        },
+        "loading": "Loading alarm configuration...",
+        "thresholds": {
+          "alarm_active": "Alarm Active",
+          "alarm_inactive": "Alarm Inactive",
+          "alarm_active_desc": "System will monitor values and trigger Alert Events",
+          "alarm_inactive_desc": "Alarm monitoring is currently disabled",
+          "low_threshold_title": "Low Alarm Threshold",
+          "low_below_alert": "Below = Alert",
+          "low_placeholder": "e.g. 10.0 (Leave blank if unused)",
+          "low_desc_alert": "Alert when value is below {{val}}",
+          "unspecified": "Unspecified",
+          "high_threshold_title": "High Alarm Threshold",
+          "high_above_alert": "Above = Alert",
+          "high_placeholder": "e.g. 90.0 (Leave blank if unused)",
+          "high_desc_alert": "Alert when value is above {{val}}",
+          "visual_preview": "Visual Threshold Preview (Normal vs Alert Zones):",
+          "low_tag": "Low: {{val}}",
+          "high_tag": "High: {{val}}",
+          "no_min_limit": "No Min Limit",
+          "no_max_limit": "No Max Limit",
+          "normal_zone": "✓ Normal Range Zone",
+          "bar_low": "LOW",
+          "bar_normal": "NORMAL",
+          "bar_high": "HIGH",
+          "trigger_delay_label": "Trigger Delay / Sustained Time( period before alert is triggered )",
+          "delay_instant": "Instant (Immediately at 0s)",
+          "delay_30s": "30 Seconds",
+          "delay_1m": "1 Minute",
+          "delay_5m": "5 Minutes (Standard)",
+          "delay_10m": "10 Minutes",
+          "severity_label": "Severity Level",
+          "severity_info": "ℹInfo",
+          "severity_warning": "Warning",
+          "severity_critical": "Critical"
+        },
+        "notifications": {
+          "web_notify_title": "Active Web Notify",
+          "enabled": "Enabled: ",
+          "disabled": "Disabled: ",
+          "web_notify_enabled_desc": "Show real-time Pop-up / Toast notification on web when alarm occurs",
+          "web_notify_disabled_desc": "Disable real-time web notification for this sensor",
+          "save_alarm_title": "Save Alarm Log (Alert Events)",
+          "save_alarm_enabled_desc": "System records alarm events into database history (Alert Events)",
+          "save_alarm_disabled_desc": "Web notification only (Does not record to database/history)",
+          "line_notify_title": "LINE Messaging API",
+          "global_badge": "Global Setting",
+          "line_notify_enabled_desc_with_token": "System sends alerts via LINE Messaging API (Using global channel token and target from Notification Settings)",
+          "line_notify_enabled_desc_no_token": "System sends alerts via LINE Messaging API (Global target not yet configured in Notification Settings)",
+          "line_notify_disabled_desc": "Do not send LINE notifications for this sensor",
+          "email_notify_title": "Email Notification",
+          "email_notify_enabled_desc_with_recipients": "System sends alert emails to recipients (Using global Email list from Notification Settings)",
+          "email_notify_enabled_desc_no_recipients": "System sends alert emails (Global Email not yet configured in Notification Settings)",
+          "email_notify_disabled_desc": "Do not send Email notifications for this sensor"
+        },
+        "actions": {
+          "cancel": "Cancel",
+          "save": "Save Alarm Rule",
+          "saving": "Saving..."
+        },
+        "swal": {
+          "fetch_error_title": "Error",
+          "fetch_error_msg": "Failed to load alarm rules for this sensor.",
+          "save_success_title": "Saved Alarm Rule for {{metric}}",
+          "save_error_title": "Save Failed",
+          "save_error_msg": "Could not save alarm rule to alert_rules table."
+        }
+      },
+      "notifications": {
+        "title": "Notification Settings",
+        "subtitle": "Configure global LINE Messaging API and Email alerts for all sensors",
+        "line_enabled": "LINE Messaging API Enabled",
+        "line_disabled": "LINE Messaging API Disabled",
+        "line_enabled_desc": "System will send alerts to configured LINE Messaging API targets",
+        "line_disabled_desc": "Toggle switch to enable LINE Messaging API",
+        "line_token_label": "LINE Messaging API Target(s)",
+        "test_line_btn": "Test LINE ( {{count}} )",
+        "test_line_title": "Send test message to configured LINE Messaging API targets",
+        "testing": "Testing...",
+        "delete_token_title": "Delete this LINE target",
+        "line_placeholder": "Paste CHANNEL_ACCESS_TOKEN|USER_ID and press Enter",
+        "line_channel_access_token_placeholder": "Channel Access Token",
+        "line_recipient_id_placeholder": "User ID / Group ID / Room ID",
+        "line_add_target_btn": "Add",
+        "line_hint": "Use CHANNEL_ACCESS_TOKEN|USER_ID, CHANNEL_ACCESS_TOKEN|GROUP_ID, or CHANNEL_ACCESS_TOKEN|ROOM_ID. Separate multiple targets with comma (,).",
+        "email_enabled": "Email Notification Enabled",
+        "email_disabled": "Email Notification Disabled",
+        "email_enabled_desc": "System will send alert emails to configured recipients",
+        "email_disabled_desc": "Toggle switch to enable Email alerts",
+        "email_recipients_label": "Email Recipients",
+        "test_email_btn": "Test Email ( {{count}} ) ",
+        "test_email_title": "Send test email to configured email addresses",
+        "invalid_email": "Invalid email format",
+        "delete_email_title": "Delete this email",
+        "email_placeholder": "Type or paste Email (comma-separated if multiple) and press Enter",
+        "email_hint": "Supports multiple emails separated by comma (,), e.g. operator@plant.com, engineer@plant.com",
+        "test_all_btn": "Test All Notifications",
+        "test_all_title": "Test sending both LINE Messaging API and Email simultaneously",
+        "test_all_running": "Testing all notifications...",
+        "save_btn": "Save Notification Settings",
+        "saving": "Saving...",
+        "swal": {
+          "save_success": "Notification settings saved",
+          "save_forbidden_title": "Forbidden",
+          "save_forbidden_msg": "You do not have permission to edit notification settings.",
+          "save_error_title": "Save failed",
+          "save_error_msg": "Could not save notification settings.",
+          "test_success_title": "Notification Test Successful (Test Success)",
+          "test_success_default_msg": "Test message sent successfully",
+          "test_result_title": "Notification Test Result",
+          "test_result_warning": "Some items failed. Please verify Token / Email",
+          "test_forbidden_title": "Forbidden",
+          "test_forbidden_msg": "You do not have permission to test notifications.",
+          "test_error_title": "Test Failed",
+          "test_error_msg": "Could not execute notification test."
+        }
+      },
+      "mqtt": {
+        "title": "MQTT Data Source",
+        "subtitle": "Sensors receive values via MQTT · {{count}} sensor(s) mapped · {{topics}} topic(s)",
+        "not_configured": "Not configured",
+        "connected": "Connected",
+        "disconnected": "Disconnected",
+        "url": "Broker URL",
+        "url_hint": "mqtt://host:1883 · mqtts:// · ws:// · wss:// — the backend connects to this broker (not the browser)",
+        "url_invalid": "Invalid broker URL (use mqtt://, mqtts://, ws:// or wss://)",
+        "username": "Username",
+        "password": "Password",
+        "password_keep": "(unchanged)",
+        "enabled": "Receive sensor values from this broker",
+        "save": "Save",
+        "saving": "Saving…",
+        "saved": "MQTT settings saved",
+        "save_failed": "Could not save MQTT settings",
+        "test_title": "Test connection (wait for the first message on a topic)",
+        "test": "Test",
+        "testing": "Waiting…",
+        "test_ok": "Connected in {{ms}} ms — message received ({{count}} numeric field(s))",
+        "test_connect_failed": "Cannot connect: {{error}}",
+        "test_no_message": "Connected, but no message arrived on this topic within the timeout",
+        "test_failed": "Test failed (server unreachable or no permission)",
+        "modal_title": "MQTT source — {{group}}",
+        "modal_desc": "Set the topic and the field in the payload for each sensor. The value received is raw and is converted with the sensor's calibration (Decode Type, Raw/Range) before display, recording and alarms.",
+        "broker_required": "Set the broker in the MQTT Data Source card first",
+        "topic": "Device topic",
+        "scan": "Scan topic",
+        "scanning": "Waiting for a message…",
+        "apply_topic": "Use for all sensors",
+        "payload": "Last payload on {{topic}}",
+        "col_metric": "Sensor",
+        "col_topic": "Topic",
+        "col_field": "Field",
+        "col_value": "Raw → value",
+        "field_placeholder": "e.g. ro1.conduct (empty = whole payload)",
+        "field_hint": "Field = path in the JSON payload, e.g. ro1.conduct or regs.0 · leave empty when the payload is a single number · bcd_hex / float32_cdab accept 2 registers [hi, lo] · empty topic = stop receiving this sensor",
+        "whole_payload": "(whole payload)",
+        "cancel": "Cancel",
+        "topic_invalid": "Topic must not contain spaces, # or +",
+        "not_mapped": "Not receiving from MQTT — click to set",
+        "set_source": "Set source",
+        "receiving": "Receiving values",
+        "waiting": "Waiting for messages",
+        "err_no_config": "No active sensor config",
+        "err_field_missing": "Field not found in payload",
+        "err_not_number": "Value is not a number",
+        "live_connected": "MQTT live data connected",
+        "live_disconnected": "MQTT live data disconnected"
+      }
+    },
+    "register": {
+      "meta_title": "Spare Parts Stock System",
+      "meta_description": "Spare parts stock system for maintenance"
+    },
+    "inspection_scan_lists": {
+      "load_error": "Failed to load data",
+      "table": {
+        "load_error": "Unable to load scan details",
+        "load_page_error": "Unable to load the next page",
+        "header": {
+          "created": "Scanned At",
+          "status": "Status",
+          "ocr_read": "OCR Result",
+          "defects": "Defects",
+          "preview": "Preview"
+        },
+        "detail": "Details",
+        "search": "Search...",
+        "empty": {
+          "title": "No scans found",
+          "subtitle": "There are no scans in this lot yet"
+        },
+        "row_per_page": {
+          "display": "Show",
+          "row": "rows"
+        }
+      },
+      "defects": {
+        "hover_hint": "Hover an item to highlight its box on the image",
+        "none": "No defects in this scan"
+      },
+      "modal": {
+        "no_image": "No image",
+        "message": "No defects found in this image",
+        "message_has_defect": "Defects found in this image — please review",
+        "has_defect": "[length] defect(s) found",
+        "no_defect": "No defects"
+      },
+      "ocr": {
+        "no_data": "No OCR data"
+      },
+      "avg_timing": {
+        "title": "Average Processing Time",
+        "prepare": "Prepare",
+        "ocr": "OCR",
+        "post": "Post-process",
+        "other": "Other",
+        "total": "Total"
+      },
+      "references": {
+        "title": "Reference Data",
+        "lot": "Lot",
+        "mfg": "MFG",
+        "exp": "EXP"
+      },
+      "summary": {
+        "total": "Total Scans",
+        "pass": "Pass",
+        "fail": "Fail",
+        "defects": "Defects"
+      }
+    }
+  },
+  "backup": {
+    "meta_title": "System Backup & Recovery | PurifiedWater",
+    "panel_title": "System Backup & Disaster Recovery",
+    "panel_subtitle": "Manage Full, Differential, Incremental backups, automated schedules, and disaster recovery.",
+    "btn_scheduler_config": "Backup Settings & Storage",
+    "btn_hide_config": "Hide Configuration",
+    "btn_upload": "Upload Archive",
+    "btn_create_backup": "Create Backup Now",
+    "btn_save_config": "Save Configuration",
+    "btn_saving": "Saving...",
+    "btn_cancel": "Cancel",
+    "btn_start_create": "Start Backup",
+    "initiating": "Initiating...",
+    "total_backups": "Total Backups",
+    "total_storage": "Total Archive Storage",
+    "last_backup_run": "Last Backup Run",
+    "automation_schedule": "Automation Schedule",
+    "compressed_archives": "Compressed Archives",
+    "active": "Active",
+    "disabled": "Disabled",
+    "never": "Never",
+    "none": "None",
+    "target": "Target",
+    "filter_all": "All",
+    "filter_full": "Full",
+    "filter_diff": "Differential",
+    "filter_inc": "Incremental",
+    "search_placeholder": "Search backup ID or filename...",
+    "records": "RECORDS",
+    "files": "FILES",
+    "elapsed_remaining": "ELAPSED / REMAINING",
+    "progress": "Progress",
+    "system_restoration_active": "System Restoration Active",
+    "system_backup_active": "System Backup Active",
+    "cancel_task": "Cancel Task",
+    "cancelling": "Cancelling...",
+    "btn_cancel_job": "Stop / Cancel Process",
+    "cancel_confirm_title": "Stop Active Backup Process?",
+    "cancel_confirm_text": "This will safely terminate execution and clean up temporary files.",
+    "cancel_confirm_btn": "Yes, Cancel Operation",
+    "job_cancelled": "Backup task cancelled successfully.",
+    "schedule_storage_title": "Backup Schedule & Storage Destination",
+    "schedule_storage_desc": "Configure automated schedules, destination paths, and retention rules.",
+    "automated_scheduling": "Automated Scheduling",
+    "enable_automated_backup": "Enable Automated Backup",
+    "backup_frequency_hours": "Backup Frequency (Hours)",
+    "full_backup_interval_days": "Full Backup Interval (Days)",
+    "default_automated_type": "Default Automated Type",
+    "incremental_option": "Incremental (Changes since last backup)",
+    "differential_option": "Differential (Changes since last full)",
+    "destination_target": "Destination Target",
+    "storage_type": "Storage Type",
+    "storage_local": "Server Default Storage (storage/backups)",
+    "storage_custom_local": "Custom Local Drive / Directory Path",
+    "storage_network_share": "Network Share / SMB (UNC Path)",
+    "storage_sftp": "Remote SFTP Server",
+    "custom_local_path": "Directory Path (e.g. D:/LABEL_BACKUPS or /mnt/backups)",
+    "network_share_path": "UNC Share Path (e.g. \\\\192.168.0.250\\share)",
+    "network_username": "Username",
+    "network_password": "Password",
+    "network_domain": "Domain / Workgroup (Optional)",
+    "sftp_host": "Host / IP Address",
+    "sftp_port": "Port",
+    "sftp_username": "SSH Username",
+    "sftp_password": "SSH Password",
+    "sftp_remote_path": "Remote Directory",
+    "test_connection_btn": "Verify Username, Password & Storage Path",
+    "testing_connection": "Testing Access...",
+    "storage_test_success": "Storage connection test successful",
+    "storage_test_failed": "Storage connection test failed",
+    "storage_capacity_title": "Destination Storage Capacity",
+    "storage_used": "Used",
+    "storage_free": "Free",
+    "storage_total": "Total Capacity",
+    "storage_verified_rw": "Read & Write Verified",
+    "retention_policies": "Retention Policies",
+    "retention_days": "Retention Days (Expire older than)",
+    "max_backup_count": "Maximum Backup Count",
+    "retain_local_copy": "Retain Local Copy when Uploading (Recommended)",
+    "history_table_title": "Backup Archives",
+    "total_archives_available": "Total {{count}} archives available",
+    "col_archive_file": "Archive File / ID",
+    "col_type": "Type",
+    "col_records": "Database Records",
+    "col_files": "Files",
+    "col_storage_path": "Storage Path",
+    "col_size": "Size",
+    "col_created": "Created Date / Operator",
+    "col_actions": "Actions",
+    "no_backups_found": "No backup archives found.",
+    "records_unit": "records",
+    "files_unit": "files",
+    "by_operator": "by",
+    "download_archive": "Download Archive",
+    "download_complete": "Backup archive downloaded.",
+    "download_interrupted": "Download interrupted by page refresh",
+    "downloading_archive": "Downloading backup archive",
+    "download_failed": "Failed to download backup archive.",
+    "dismiss": "Dismiss",
+    "restore_backup": "Restore Backup",
+    "delete_archive": "Delete Archive",
+    "page_indicator": "Page {{page}} of {{totalPages}} ({{totalCount}} total archives)",
+    "btn_previous": "Previous",
+    "btn_next": "Next",
+    "modal_create_title": "Create System Backup",
+    "modal_create_desc": "Select backup type and options to capture data.",
+    "select_backup_type": "Backup Type",
+    "card_full_title": "Full Backup",
+    "card_full_desc": "Complete system & database snapshot (Base point)",
+    "card_diff_title": "Differential",
+    "card_diff_desc": "Changes since latest Full backup",
+    "card_inc_title": "Incremental",
+    "card_inc_desc": "Changes since last backup of any type",
+    "include_files_checkbox": "Include Image Storage Files (/storage/uploads & profile)",
+    "note_label": "Backup Note (Optional)",
+    "note_placeholder": "e.g. Pre-Deployment Snapshot, Weekly Backup...",
+    "modal_restore_title": "Restore System Data",
+    "modal_restore_desc": "Restore database and images from selected archive chain.",
+    "restore_caution_title": "Caution: Destructive Restore Operation",
+    "restore_caution_text": "Restoring will replace current PostgreSQL tables and storage images.",
+    "target_archive": "Target Archive:",
+    "restore_chain": "Restore Chain:",
+    "steps_count": "step(s)",
+    "btn_confirm_restore": "Confirm & Start Restore",
+    "restoring_spinner": "Initiating Restore...",
+    "modal_upload_title": "Upload External Backup Archive",
+    "modal_upload_desc": "Upload a valid .tar.gz archive generated from this system.",
+    "click_to_select_archive": "Click to select .tar.gz archive",
+    "supported_formats": "Supported formats: .tar.gz, .tar",
+    "btn_upload_confirm": "Upload & Catalog Archive",
+    "uploading_spinner": "Uploading...",
+    "create_started": "Backup operation started in background.",
+    "create_failed": "Failed to create backup",
+    "restore_warning_title": "CRITICAL: Confirm System Restore?",
+    "restore_warning_text": "Restoring data will replace current database tables and file storage with data from the backup point. Proceed with caution.",
+    "restore_confirm_btn": "Yes, Restore System",
+    "restore_started": "System restore process started in background.",
+    "restore_failed": "Restore Failed",
+    "delete_confirm_title": "Delete Backup Archive?",
+    "delete_confirm_text": "Are you sure you want to permanently delete '{{filename}}'?",
+    "delete_confirm_btn": "Delete Archive",
+    "deleted_success": "Backup file deleted successfully.",
+    "upload_success": "Backup archive uploaded successfully!",
+    "upload_failed": "Upload Failed",
+    "config_saved": "Backup configuration updated successfully!",
+    "stage_initializing": "Initializing...",
+    "stage_exporting_database": "Exporting Database Tables & Relationships...",
+    "stage_database_exported": "Database Tables Exported",
+    "stage_scanning_files": "Scanning Image Files & Attachments...",
+    "stage_files_scanned": "File Scan Complete",
+    "stage_compressing_archive": "Compressing Archive Package (.tar.gz)...",
+    "stage_computing_checksum": "Computing SHA-256 Checksum...",
+    "stage_uploading_remote": "Dispatching Archive to Target Storage...",
+    "stage_restoring_step": "Applying Restore Step...",
+    "stage_restoring_database": "Restoring Database Tables...",
+    "stage_database_restored": "Database Tables Restored",
+    "stage_restoring_files": "Restoring Storage Files...",
+    "stage_files_restored": "Storage Files Restored",
+    "stage_cleaning_up": "Cleaning up temporary files...",
+    "stage_completed": "Operation Completed Successfully",
+    "stage_cancelled": "Operation Cancelled",
+    "stage_failed": "Operation Failed",
+    "sync_success": "Synced {{count}} backup archive(s) to destination successfully!",
+    "sync_partial": "Synced {{count}} file(s) with some errors",
+    "syncing_remote": "Syncing files to destination...",
+    "sync_remote_btn": "Sync to Destination",
+    "sync_remote_short": "Sync Destination",
+    "sync_remote_tooltip": "Sync all unsynced backup archives to storage destination",
+    "syncing": "Syncing..."
+  },
+  "water_supply": {
+    "dashboard_title": "Water Supply & Pumps Overview",
+    "dashboard_subtitle": "Water Supply & Pumps System",
+    "reports_title": "Water Supply Reports & Diagnostics",
+    "reports_subtitle": "Water Supply Reports & Diagnostics",
+    "last_updated": "Last updated",
+    "broker": "Broker",
+    "topic": "Topic",
+    "live": "LIVE",
+    "connecting": "Connecting...",
+    "offline": "Offline",
+    "stale_data": "No recent data",
+    "alarm_active": "ALARM ACTIVE",
+    "use_live": "Use Live Data",
+    "use_demo": "Demo Mode",
+    "view_3d": "3D View",
+    "view_2d": "2D View",
+    "unit_cm": "cm",
+    "unit_liter": "Liter",
+    "tank_settings_btn": "Tank Config",
+    "tank_settings_title": "Configure Tank Dimensions & Elevation",
+    "tank_settings_desc": "Configure Width × Length × Height of each tank and bottom elevation offset for precise liter volume calculations.",
+    "tank1_title": "Tank 1 (Inflow / Primary)",
+    "tank2_title": "Tank 2 (Distribution / Secondary)",
+    "tank_width_label": "Width (m)",
+    "tank_length_label": "Length (m)",
+    "tank_height_label": "Height (m)",
+    "tank2_offset_label": "Tank 2 bottom lower than Tank 1 (cm)",
+    "tank2_offset_help": "Both tanks share the same water surface elevation, but Tank 2 is lower, giving it deeper water depth.",
+    "sensor_tank_label": "Level Sensor Location",
+    "sensor_tank1": "Mounted in Tank 1",
+    "sensor_tank2": "Mounted in Tank 2",
+    "tank_capacity_calc": "Calculated Capacity",
+    "liters_unit": "Liters",
+    "cubic_meters": "m³",
+    "save_settings": "Save Settings",
+    "reset_defaults": "Reset to Defaults",
+    "close": "Close",
+    "tank1_info_title": "Water Tank 1",
+    "tank2_info_title": "Water Tank 2",
+    "total_storage_title": "Combined Water Storage",
+    "communicating_vessels_note": "Interconnected (Equal Surface Elevation)",
+    "tank_dims_format": "W {{w}}m × L {{l}}m × H {{h}}m",
+    "lower_by": "Bottom lower by +{{offset}} cm",
+    "diagram_3d_title": "Water Supply Process Diagram · 3D",
+    "diagram_2d_title": "Water Supply Process Diagram · 2D",
+    "hint_3d": "Drag to rotate · Scroll to zoom · Double-click to reset",
+    "auto_rotate_on": "Auto Rotate",
+    "auto_rotate_off": "Stop Rotate",
+    "reset_view": "Reset View",
+    "tank_1": "Water Tank 1",
+    "tank_2": "Water Tank 2",
+    "inflow": "Water Inflow",
+    "outflow": "Distribution",
+    "connecting_pipe": "Inter-tank Pipe",
+    "mode": "Mode",
+    "auto": "AUTO",
+    "manual": "MANUAL",
+    "valve_open": "VALVE OPEN",
+    "valve_closed": "VALVE CLOSED",
+    "pump_run": "RUN",
+    "pump_stop": "STOP",
+    "pump_overload": "OVERLOAD",
+    "pump1_overload_alert": "OVERLOAD: Pump 1 Fault",
+    "pump2_overload_alert": "OVERLOAD: Pump 2 Fault",
+    "both_pumps_overload": "OVERLOAD: Pump 1 & 2 Fault",
+    "pump_status_title": "Pumps & Equipment Status",
+    "overload_status": "Overload Status",
+    "normal": "Normal",
+    "tripped": "TRIPPED (Fault)",
+    "flow_rate": "Flow Rate",
+    "total_volume": "Total Volume Inflow",
+    "pressure_switch": "PRESSURE SWITCH",
+    "water_level_trend": "Water Level Trend",
+    "current_level": "Current Level",
+    "tank_capacity": "Tank Capacity",
+    "accumulated_volume": "Accumulated Volume",
+    "equipments": "Main Equipments Status",
+    "control_mode": "Control Mode",
+    "control_status": "Mode Status",
+    "inlet_valve": "Inlet Valve",
+    "pump_1": "Water Pump 1",
+    "pump_2": "Water Pump 2",
+    "alarm": "Alarm Indicator",
+    "auto_pump1": "Auto Pump 1",
+    "auto_pump2": "Auto Pump 2",
+    "manual_pump1": "Manual Pump 1",
+    "manual_pump2": "Manual Pump 2",
+    "manual_valve": "Manual Valve",
+    "local_io": "Local I/O Status",
+    "rs485_io": "RS485 Modbus I/O",
+    "controller_system": "Controller System Info",
+    "ip_address": "IP Address",
+    "uptime": "System Uptime",
+    "wifi_rssi": "WiFi RSSI",
+    "sensor_status": "Sensor Status",
+    "sensor_normal": "Communicating Normally",
+    "sensor_lost": "Communication Lost",
+    "rssi_good": "Excellent",
+    "rssi_fair": "Fair",
+    "rssi_weak": "Weak",
+    "min": "Min",
+    "max": "Max",
+    "avg": "Avg",
+    "overview": {
+      "title": "Water Overview · All Tanks & Ponds",
+      "subtitle": "Monitoring water levels across the plant ({{count}} sites)",
+      "back_to_overview": "Back to Overview",
+      "view_details_short": "View details",
+      "status_normal": "Normal",
+      "status_low": "Low level",
+      "status_high": "High level",
+      "status_alarm": "ALARM",
+      "status_offline": "Offline",
+      "status_connecting": "Connecting",
+      "status_no_sensor": "Sensor pending",
+      "volume_capacity": "Volume / Capacity",
+      "no_data_source": "No data source yet",
+      "valve": "Valve",
+      "sensor_range": "Sensor range",
+      "kpi_sites": "Total Storage Sites",
+      "sites_unit": "sites",
+      "kpi_sites_sub": "{{live}} live · {{pending}} awaiting sensor",
+      "kpi_volume": "Total Volume (live sites)",
+      "kpi_volume_sub": "of {{cap}} m³ · plant capacity {{total}} m³",
+      "kpi_attention": "Sites Needing Attention",
+      "all_normal": "All sites normal",
+      "kpi_pumps": "Supply Pumps Running",
+      "all_normal_desc": "All monitored sites are within limits. No alarms.",
+      "footnote": "Red dashed = low limit · Yellow dashed = high limit · Capacity of sites without sensors is estimated from the factory layout",
+      "capacity": "Capacity (est.)",
+      "tank_height": "Tank height",
+      "alarm_limits": "Alarm limits",
+      "alarm_limits_sub": "Alerts when level leaves this range",
+      "data_source": "Data source",
+      "no_reading": "No level reading from a sensor yet",
+      "pending_title": "This site has no level sensor connected yet",
+      "pending_desc": "Once a sensor is installed and sending data (MQTT or Modbus), this page will show live level, volume, history and alarms.",
+      "about": "About this site",
+      "trend_waiting": "Waiting for water level data..."
+    },
+    "details_title": "Water Supply & Pumps Details",
+    "report": {
+      "meta_title": "Water Supply Report",
+      "meta_description": "Water supply historical report",
+      "title": "Water Supply Report",
+      "subtitle": "Tank level, flow rate and water usage",
+      "mock_title": "Sample data (Mockup)",
+      "mock_desc": "Historical table and chart data are simulated until MQTT data is stored in the database (LIVE values are real)."
+    },
+    "scene3d": {
+      "subtitle": "Live MQTT data · tank sizes from configuration",
+      "hide_labels": "Hide labels",
+      "show_labels": "Show labels",
+      "fullscreen": "Fullscreen",
+      "loading": "Loading 3D model...",
+      "waiting": "Waiting for MQTT data...",
+      "legend_run": "Running",
+      "legend_sleep": "Sleep",
+      "legend_fault": "Fault/Alarm",
+      "legend_stop": "Stopped",
+      "legend_flow": "Water flow",
+      "hint": "Left-drag rotate · Right-drag pan · Scroll zoom · Double-click reset",
+      "frequency": "Frequency",
+      "current": "Current",
+      "flow_meter": "Flow meter",
+      "discharge_pressure": "Discharge Pressure",
+      "pressure_now": "Pressure",
+      "setpoint": "Setpoint (SP)",
+      "pressure_sensor": "Pressure sensor",
+      "pid_title": "Pressure Control Parameters (PID / VFD)",
+      "pid_target": "PID target freq.",
+      "acc_dec": "Accel/Decel time",
+      "sleep_freq": "Sleep frequency",
+      "sleep_delay": "Sleep delay",
+      "lower_limit": "Low level cut-off",
+      "manual_speed_p1": "Pump 1 manual speed",
+      "manual_speed_p2": "Pump 2 manual speed",
+      "status_word": "Status word P1 / P2",
+      "sensor_type": "Pressure device",
+      "comm_title": "Communication Status",
+      "comm_level": "Level sensor",
+      "comm_pump1": "Pump 1 inverter",
+      "comm_pump2": "Pump 2 inverter",
+      "comm_pressure": "Pressure sensor",
+      "comm_meter": "Flow meter",
+      "comm_rs485": "RS485 I/O",
+      "comm_sensor": "Sensor bus",
+      "sleeping": "Pumps sleeping",
+      "scene": {
+        "level": "level",
+        "cut_off": "cut-off",
+        "water_tank_v": "Water Tank {{v}}",
+        "l": "L",
+        "sensor_ok": "Sensor OK",
+        "sensor_lost": "Sensor lost",
+        "inlet_valve": "Inlet valve",
+        "open": "OPEN",
+        "closed": "CLOSED",
+        "mode": "Mode",
+        "source": "Source",
+        "city_water": "City water",
+        "flow_meter": "Flow meter",
+        "total": "Total",
+        "comm": "Comm",
+        "run": "RUN",
+        "fault": "FAULT",
+        "offline": "OFFLINE",
+        "stop": "STOP",
+        "pump_i": "Pump {{i}}",
+        "frequency": "Frequency",
+        "current": "Current",
+        "pressure": "Pressure",
+        "setpoint": "Setpoint",
+        "device": "Device",
+        "pt_signal": "PT signal",
+        "panel": "Panel"
+      }
+    },
+    "control": {
+      "access_denied": "Access denied",
+      "administrators_only": "Administrators only",
+      "pump_control_settings_require_an_admin": "Pump control & settings require an admin account.",
+      "back_to_details": "Back to details",
+      "on": "ON",
+      "off": "OFF",
+      "send_command": "Send command",
+      "cancel": "Cancel",
+      "command_failed": "Command failed",
+      "not_connected_to_the_mqtt_broker": "Not connected to the MQTT broker",
+      "sent": "sent",
+      "device_applied": "device applied",
+      "not_confirmed_yet": "not confirmed yet",
+      "sent_but_some_values_differ": "Sent, but some values differ",
+      "confirmed_by_the_controller": "Confirmed by the controller",
+      "must_be_above_the_low_alarm": "Must be above the low alarm",
+      "save_nchanges_setting_s": "Save {{nChanges}} setting(s)",
+      "pump_control_settings": "Pump control & settings",
+      "commands_go_to": "Commands go to",
+      "last_settings_from_device": "Last settings from device",
+      "back_to_system_details": "Back to system details",
+      "water_overview": "Water overview",
+      "tanks_pumps": "Tanks & pumps",
+      "control_settings": "Control & settings",
+      "connected": "Connected",
+      "connecting": "Connecting...",
+      "offline": "Offline",
+      "connecting_to_the_mqtt_broker_controls": "Connecting to the MQTT broker — controls unlock once connected",
+      "waiting_for_water_mqtt_topic_settings": "Waiting for {{WATER_MQTT_TOPIC}}/settings from the controller",
+      "operating_mode": "Operating mode",
+      "switch_to_auto_manual_pump_valve": "Switch to AUTO — manual pump/valve commands will be cleared",
+      "switch_to_manual_pumps_run_only": "Switch to MANUAL — pumps run only on manual commands",
+      "auto_vfds_hold_pressure_via_pid": "AUTO: VFDs hold pressure via PID; valve refills by level",
+      "manual_start_stop_pumps_set_speed": "MANUAL: start/stop pumps, set speed and valve here",
+      "pump_i": "Pump {{i}}",
+      "run": "RUN",
+      "stop": "STOP",
+      "freq": "Freq",
+      "current": "Current",
+      "enabled_in_auto": "Enabled in AUTO",
+      "level_below_cut_off": "Level below cut-off",
+      "start_pump_i": "Start pump {{i}}",
+      "start": "Start",
+      "stop_pump_i": "Stop pump {{i}}",
+      "stop_2": "Stop",
+      "manual_speed": "Manual speed",
+      "set_pump_i_speed": "Set pump {{i}} speed",
+      "apply_speed": "Apply speed",
+      "inlet_valve": "Inlet valve",
+      "open": "OPEN",
+      "closed": "CLOSED",
+      "auto_opens_below_v_cm_see": "AUTO: opens below {{v}} cm (see settings) — manual open/close in MANUAL mode",
+      "open_inlet_valve": "Open inlet valve",
+      "open_2": "Open",
+      "close_inlet_valve": "Close inlet valve",
+      "close": "Close",
+      "restart_controller_control_pauses_while": "Restart controller? Control pauses while it reboots",
+      "restart_controller": "Restart controller",
+      "level_is_below_the_pump_cut": "Level is below the pump cut-off — manual start is disabled",
+      "controller_settings": "Controller settings",
+      "discard": "Discard",
+      "save_changesv": "Save changes{{v}}",
+      "edited": "edited",
+      "current_2": "Current",
+      "after_sending_the_page_waits_for": "After sending, the page waits for /settings to confirm the device applied it — every command is written to the audit log",
+      "sending_and_waiting_for_confirmation": "Sending and waiting for confirmation...",
+      "fields": {
+        "set_pressure": {
+          "label": "Pressure setpoint"
+        },
+        "pid_kp": {
+          "label": "PID Kp"
+        },
+        "pid_ki": {
+          "label": "PID Ki"
+        },
+        "acc_dec": {
+          "label": "Accel / decel time"
+        },
+        "sleep_freq": {
+          "label": "Sleep frequency",
+          "hint": "Also the minimum manual speed"
+        },
+        "sleep_delay_sec": {
+          "label": "Sleep delay"
+        },
+        "tank_capacity": {
+          "label": "Level range (tank height)",
+          "hint": "Used for % and as the max of other thresholds"
+        },
+        "valve_on_cm": {
+          "label": "Open inlet valve below"
+        },
+        "valve_period_sec": {
+          "label": "Valve check period"
+        },
+        "lower_limit_cm": {
+          "label": "Low level pump cut-off"
+        },
+        "alert_min_cm": {
+          "label": "Low level alarm"
+        },
+        "alert_max_cm": {
+          "label": "High level alarm",
+          "hint": "Must be above the low alarm"
+        },
+        "alert_period_sec": {
+          "label": "Alarm delay"
+        },
+        "sensor_type_switch": {
+          "label": "Pressure device"
+        }
+      },
+      "sections": {
+        "pressure": {
+          "title": "Pressure control (PID / VFD)",
+          "desc": "Used by the inverters to hold discharge pressure in AUTO mode"
+        },
+        "level": {
+          "title": "Level, valve & alarms",
+          "desc": "Level thresholds for refilling, pump cut-off and alarms (cm from the sensor)"
+        }
+      },
+      "options": {
+        "sensor_type_switch": {
+          "true": "Pressure switch",
+          "false": "RS485 pressure sensor"
+        }
+      },
+      "labels": {
+        "auto_mode": "Operating mode",
+        "auto_pump1": "Pump 1 (AUTO)",
+        "auto_pump2": "Pump 2 (AUTO)",
+        "manual_pump1": "Pump 1 (manual)",
+        "manual_pump2": "Pump 2 (manual)",
+        "manual_valve": "Inlet valve (manual)",
+        "manual_speed_pump1": "Pump 1 manual speed",
+        "manual_speed_pump2": "Pump 2 manual speed",
+        "restart": "Restart controller"
+      },
+      "validation": {
+        "not_number": "Enter a number",
+        "out_of_range": "Allowed {{min}}–{{max}}",
+        "integer": "Whole number only"
+      },
+      "pump_auto_enable": "Enable pump {{i}} in AUTO",
+      "pump_auto_disable": "Disable pump {{i}} in AUTO",
+      "open_control_page": "Control & settings",
+      "io_waiting": "Waiting for I/O data from the controller..."
+    },
+    "report_mock": {
+      "water_level": "Water level",
+      "main_water_meter": "Main Water Meter",
+      "meter_reading": "Meter reading",
+      "usage": "Usage",
+      "flow_rate": "Flow rate",
+      "supply_tank_1": "Supply Tank 1",
+      "supply_tank_2": "Supply Tank 2",
+      "utility_water_intake": "Utility water intake",
+      "tank_1_2_interconnected": "Tank 1 + 2 (interconnected)"
+    },
+    "liters_unit_short": "Liters",
+    "percent_full": "Full",
+    "ui": {
+      "level_below_threshold": "Water level below threshold",
+      "level_above_threshold": "Water level above threshold",
+      "waiting_history": "Waiting for water level history..."
+    },
+    "tank2_offset_same_level": "0 cm (same level)",
+    "flow_rate_trend": "Flow Rate Trend",
+    "flow_alarm": "Flow alarm",
+    "station_report": {
+      "title": "Water-Supply Tanks & Pumps Report",
+      "subtitle": "Level, tank volume, inflow meter, valve and pump operation for the selected period",
+      "mock_desc": "Historical table data is simulated until the tank/pump MQTT data is logged to the database."
+    },
+    "mqtt_source": {
+      "title": "Pump control system MQTT connection",
+      "connected": "Connected",
+      "disconnected": "Not connected",
+      "default_broker_short": "server default broker",
+      "topic": "Main topic",
+      "topic_hint": "Data: {{topic}} · settings: {{topic}}/settings · configs: {{topic}}/configs · commands are sent to {{topic}}/set",
+      "broker": "Broker",
+      "default_broker": "Server default broker",
+      "default_broker_hint": "utilities-mqtt in Docker (bridged to the old broker — topics in MQTT_BRIDGE_TOPICS)",
+      "custom_broker": "Custom broker",
+      "custom_broker_hint": "The backend connects to this broker directly (e.g. the old broker 192.168.12.77)",
+      "url": "Broker URL (mqtt:// mqtts:// ws:// wss://)",
+      "username": "Username",
+      "password": "Password",
+      "password_keep": "(unchanged)",
+      "test": "Test",
+      "testing": "Waiting for a message…",
+      "test_ok": "Connected in {{ms}} ms — message received ({{count}} field(s))",
+      "test_connect_failed": "Cannot connect: {{error}}",
+      "test_no_message": "Connected, but no message on {{topic}} within the timeout",
+      "test_failed": "Test failed (server unreachable or no permission)",
+      "save": "Save",
+      "saving": "Saving…",
+      "saved": "MQTT connection saved — all pages now use the new settings",
+      "save_failed": "Could not save the MQTT connection",
+      "topic_invalid": "Invalid topic (no spaces, # or +, and must not end with /set, /settings or /configs)",
+      "url_invalid": "Invalid broker URL (use mqtt://, mqtts://, ws:// or wss://)",
+      "load_failed": "Could not load the MQTT settings from the server",
+      "no_response": "no response from backend",
+      "load_failed_404": "The backend does not have this API yet — restart utilities-api to load the new code: docker compose restart utilities-api, then reload the page"
+    }
+  },
+  "electrical": {
+    "back_to_layout": "Back to Factory Layout",
+    "type_main": "Main power meter",
+    "type_transformer": "Transformer",
+    "type_chiller": "Chiller",
+    "type_utility": "Production utility",
+    "status_overload": "Overloaded",
+    "status_watch": "Watch",
+    "status_normal": "Normal",
+    "mock_desc": "All values on this page are simulated until the power meters (Modbus) are connected.",
+    "kpi_loading": "Transformer Loading",
+    "kpi_power": "Active Power",
+    "peak_24h": "24h peak",
+    "kpi_current": "Avg 3-phase Current",
+    "unbalance": "Unbalance",
+    "kpi_today": "Energy Today",
+    "yesterday": "Yesterday",
+    "this_month": "This month",
+    "kpi_meter": "Meter Reading",
+    "load_profile": "Load Profile – Last 24 Hours",
+    "limit_80": "80% rating line",
+    "daily_energy": "Daily Energy (last 14 days)",
+    "phases": "Per-phase Values",
+    "current_unbalance": "Current unbalance",
+    "power_quality": "Power Quality",
+    "voltage_ll": "Voltage (L-L)",
+    "frequency": "Frequency",
+    "pf": "Power factor (PF)",
+    "apparent": "Apparent power",
+    "reactive": "Reactive power",
+    "info": "Point Information",
+    "type": "Type",
+    "rating": "Rating",
+    "avg_load": "Design avg load",
+    "location": "Location",
+    "dashboard_title": "Electrical Overview",
+    "report_title": "Electrical Report",
+    "report_subtitle": "Meter readings and energy used at every point",
+    "report_mock_desc": "Historical data is simulated until power meters are connected and logged to the database.",
+    "kpi_total_load": "Total Load (TR 1–5)",
+    "kpi_today_total": "Energy Today (TR 1–5)",
+    "kpi_peak": "24h Peak Demand",
+    "at_time": "at",
+    "kpi_watch": "Points to Watch",
+    "all_normal": "All points normal",
+    "tr_profile": "Transformer Load – Last 24 h (stacked)",
+    "energy_by_point": "Energy Today by Point",
+    "current_short": "Current",
+    "today_short": "Today",
+    "dashboard_subtitle": "Power meters, transformers and major loads ({{count}} points)",
+    "kpi_total_load_sub": "{{pct}}% of {{rated}} kVA total rating",
+    "report_mock": {
+      "meter": "Meter",
+      "meter_reading": "Meter reading",
+      "energy": "Energy",
+      "energy_used": "Energy used"
+    }
+  },
+  "wastewater": {
+    "dashboard_title": "Wastewater Treatment Overview",
+    "report_title": "Wastewater Report",
+    "report_subtitle": "Inflow, discharge and effluent quality",
+    "mock_desc": "All values are simulated until wastewater sensors are installed/connected.",
+    "dashboard": {
+      "inflow": "Inflow",
+      "discharge": "Discharge",
+      "fault": "Fault",
+      "watch": "Watch",
+      "normal": "Normal",
+      "activated_sludge_plant_beside_the_wareho": "Activated-sludge plant beside the warehouse",
+      "inflow_today": "Inflow Today",
+      "yesterday": "Yesterday",
+      "now": "Now",
+      "discharged_today": "Discharged Today",
+      "effluent_compliance": "Effluent Compliance",
+      "parameter_s_over_limit": "Parameter(s) over limit",
+      "near_limit_80": "Near limit ≥ 80%",
+      "all_parameters_pass": "All parameters pass",
+      "aeration_do": "Aeration DO",
+      "target": "Target",
+      "treatment_process": "Treatment Process",
+      "inflow_vs_discharge_24_h": "Inflow vs Discharge (24 h)",
+      "effluent_quality": "Effluent Quality",
+      "limits_ministry_of_industry_effluent_sta": "Limits: Ministry of Industry effluent standard B.E. 2560 (2017) — verify against the factory permit conditions",
+      "treatment_units_equipment": "Treatment Units & Equipment",
+      "all_normal": "All normal",
+      "stage": "Stage",
+      "canteen_pond": "Canteen pond",
+      "beside_the_warehouse": "Beside the warehouse",
+      "all_values_are_simulated_mockup": "All values are simulated (mockup)"
+    },
+    "unit": {
+      "fault": "Fault",
+      "watch": "Watch",
+      "normal": "Normal",
+      "canteen_pond": "Canteen pond",
+      "beside_the_warehouse": "Beside the warehouse",
+      "stage": "Stage",
+      "back_to_wastewater_overview": "Back to Wastewater Overview",
+      "24_h": "24 h",
+      "about_this_unit": "About this unit",
+      "range_limit": "Limit",
+      "range_target": "Target"
+    },
+    "report_mock": {
+      "inflow_meter": "Inflow meter",
+      "wastewater_inflow": "Wastewater inflow",
+      "effluent_discharged": "Effluent discharged",
+      "inflow_rate": "Inflow rate",
+      "eq_tank_level": "EQ tank level",
+      "aeration_do": "Aeration DO",
+      "effluent_ph": "Effluent pH",
+      "effluent_cod": "Effluent COD",
+      "effluent_bod": "Effluent BOD",
+      "effluent_tss": "Effluent TSS",
+      "flow_volume": "Flow & Volume",
+      "treatment_process": "Treatment Process",
+      "effluent_quality": "Effluent Quality",
+      "vs_moi_2017_standard": "vs. MOI 2017 standard"
+    }
+  },
+  "data": {
+    "factory_buildings": {
+      "buildings_raw": {
+        "wh": {
+          "name": "Warehouse"
+        },
+        "fac": {
+          "name": "Factory"
+        },
+        "b5": {
+          "name": "Building 5"
+        },
+        "b4": {
+          "name": "Building 4 (Sales)"
+        },
+        "b1": {
+          "name": "Office"
+        }
+      },
+      "rooms": {
+        "r_load1": {
+          "name": "Raw Material Loading Bay Phase 1"
+        },
+        "r_boiler": {
+          "name": "Boiler Room"
+        },
+        "r_ahu1": {
+          "name": "AHU1 Room"
+        },
+        "r_load2": {
+          "name": "Raw Material Loading Bay Phase 2"
+        },
+        "r_cda": {
+          "name": "CDA Room"
+        },
+        "r_pw": {
+          "name": "Purified Water System Room"
+        },
+        "r_eng": {
+          "name": "Engineering Department"
+        },
+        "r_ahu2": {
+          "name": "AHU2 & Solar Cell Room"
+        },
+        "r_store": {
+          "name": "Storage & Dust Collector Room"
+        },
+        "r_ahu3": {
+          "name": "AHU3 Room"
+        }
+      },
+      "objects": {
+        "o_canteen": {
+          "name": "Canteen"
+        },
+        "o_pool": {
+          "name": "Effluent Holding Pond (Canteen)",
+          "note": "Final pond for treated, clarified water: holds effluent for quality checks, natural polishing, and reuse for irrigation and in-plant recycling."
+        },
+        "o_chiller": {
+          "name": "Chiller (by Warehouse)"
+        },
+        "o_pump": {
+          "name": "Water Storage Tank & Pump System"
+        },
+        "o_gen": {
+          "name": "Backup Generator"
+        },
+        "o_b5tank": {
+          "name": "Water Storage Tanks (Building 5 Rooftop)"
+        },
+        "o_b5chiller": {
+          "name": "Chiller (Building 5 Rooftop)"
+        },
+        "o_guard": {
+          "name": "Security Guard Booth"
+        },
+        "o_wmeter": {
+          "name": "Water Meter"
+        },
+        "o_emeter": {
+          "name": "Electricity Meter"
+        },
+        "o_tr1": {
+          "name": "Transformer 1"
+        },
+        "o_tr2": {
+          "name": "Transformer 2"
+        },
+        "o_tr3": {
+          "name": "Transformer 3"
+        },
+        "o_tr4": {
+          "name": "Transformer 4"
+        },
+        "o_tr5": {
+          "name": "Transformer 5"
+        },
+        "o_whlift": {
+          "name": "Lift Machine Room (Warehouse Roof)",
+          "note": "Lift machine room on the warehouse roof, 3.5 m high."
+        },
+        "o_whtank": {
+          "name": "Water Storage Tanks (Warehouse Roof)",
+          "note": "Two stainless water storage tanks on the warehouse roof."
+        },
+        "o_wt_eq": {
+          "name": "Equalization Tank (EQ)",
+          "note": "Collects all process wastewater in one place to even out flow rate and concentration before further treatment."
+        },
+        "o_wt_eqpump": {
+          "name": "EQ Tank Transfer Pumps",
+          "note": "Two self-priming centrifugal pumps lifting wastewater from the EQ tank to the aeration tank via HDPE lines with gate valves."
+        },
+        "o_wwtp_panel": {
+          "name": "WWTP Control Panel",
+          "note": "Controls the wastewater pumps and blower, with meters, status lamps and selector switches."
+        },
+        "o_wt_aer": {
+          "name": "Aeration Tank",
+          "note": "Core of the biological treatment: air is supplied so aerobic bacteria break down organic matter (BOD/COD)."
+        },
+        "o_wt_sand": {
+          "name": "Sand Filter / Sludge Drying Bed",
+          "note": "Sand filter: water passes through sand to remove fine suspended solids · Drying bed: thickened sludge is spread on sand to drain and sun-dry into dry cake."
+        },
+        "o_wt_anae": {
+          "name": "Anaerobic Tank / Sludge Tank",
+          "note": "Covered tank where anaerobic bacteria digest organics/sludge, producing H₂S and methane; sealed to control odour and gas."
+        },
+        "o_wh_wc": {
+          "name": "Warehouse Restrooms",
+          "note": "Men's (left) · Women's (right) · flat concrete roof deck"
+        },
+        "o_tank14": {
+          "name": "Water Storage Tank (Buildings 1, 4)"
+        }
+      }
+    },
+    "factory_sensors": {
+      "sensor_groups": {
+        "power": {
+          "name": "Power meters"
+        },
+        "transformer": {
+          "name": "Transformers"
+        },
+        "water": {
+          "name": "Water (supply & pumps)"
+        },
+        "pw": {
+          "name": "Distribution Loop"
+        },
+        "wastewater": {
+          "name": "Wastewater treatment"
+        }
+      },
+      "sensors": {
+        "power": {
+          "name": "Main power meter"
+        },
+        "tr1": {
+          "name": "Transformer 1"
+        },
+        "tr2": {
+          "name": "Transformer 2"
+        },
+        "tr3": {
+          "name": "Transformer 3"
+        },
+        "tr4": {
+          "name": "Transformer 4"
+        },
+        "tr5": {
+          "name": "Transformer 5"
+        },
+        "b5chiller": {
+          "name": "Chiller – Bldg 5 roof"
+        },
+        "chiller": {
+          "name": "Chiller – warehouse yard"
+        },
+        "cda": {
+          "name": "CDA room"
+        },
+        "water": {
+          "name": "Water meter"
+        },
+        "pump": {
+          "name": "Water-supply tank"
+        },
+        "tank14": {
+          "name": "Bldg 1,4 water tank"
+        },
+        "b5tank": {
+          "name": "Bldg 5 roof tank"
+        },
+        "whtank": {
+          "name": "Warehouse roof tanks"
+        },
+        "pool": {
+          "name": "Effluent pond"
+        },
+        "pwtank": {
+          "name": "Distribution Loop (PW tank + loop)"
+        },
+        "ww_eq": {
+          "name": "EQ tank — level"
+        },
+        "ww_aer": {
+          "name": "Aeration tank — DO"
+        },
+        "ww_sand": {
+          "name": "Sand filter — turbidity"
+        },
+        "ww_anae": {
+          "name": "Sludge tank — sludge level"
+        }
+      },
+      "water_fields": {
+        "flow": {
+          "name": "Flow rate"
+        },
+        "meter": {
+          "name": "Meter total"
+        },
+        "press": {
+          "name": "Pressure"
+        },
+        "vol": {
+          "name": "Volume"
+        },
+        "height": {
+          "name": "Water height"
+        }
+      },
+      "kw": {
+        "name": "Power"
+      },
+      "a": {
+        "name": "Current (3φ avg)"
+      },
+      "v": {
+        "name": "Voltage (L-L)"
+      },
+      "pf": {
+        "name": "Power factor"
+      },
+      "hz": {
+        "name": "Frequency"
+      },
+      "liters": {
+        "name": "Tank volume"
+      },
+      "uv": {
+        "name": "UV index (0–102)"
+      },
+      "toc": {
+        "name": "TOC"
+      },
+      "cond": {
+        "name": "Conductivity"
+      },
+      "size": {
+        "name": "Rating"
+      },
+      "flow_dn": {
+        "name": "Flow rate (DN{{dn}})"
+      }
+    },
+    "wastewater_units": {
+      "ww_units": {
+        "eq": {
+          "name": "Equalization Tank",
+          "short": "EQ",
+          "level": {
+            "name": "Level"
+          },
+          "inflow": {
+            "name": "Inflow"
+          },
+          "ph": {
+            "name": "pH"
+          }
+        },
+        "eqpump": {
+          "name": "EQ Transfer Pumps",
+          "short": "EQ Pumps",
+          "p1": {
+            "name": "Pump 1"
+          },
+          "p2": {
+            "name": "Pump 2"
+          },
+          "flow": {
+            "name": "Transfer flow"
+          },
+          "amp": {
+            "name": "Motor current (total)"
+          }
+        },
+        "aer": {
+          "name": "Aeration Tank",
+          "short": "Aeration",
+          "do": {
+            "name": "Dissolved O₂ (DO)"
+          },
+          "mlss": {
+            "name": "MLSS"
+          },
+          "ph": {
+            "name": "pH"
+          },
+          "temp": {
+            "name": "Temperature"
+          },
+          "blower": {
+            "name": "Blower"
+          }
+        },
+        "anae": {
+          "name": "Anaerobic / Sludge Tank",
+          "short": "Sludge",
+          "sludge": {
+            "name": "Sludge level"
+          },
+          "h2s": {
+            "name": "H₂S gas"
+          },
+          "ph": {
+            "name": "pH"
+          }
+        },
+        "sand": {
+          "name": "Sand Filter / Drying Bed",
+          "short": "Sand Filter",
+          "turb": {
+            "name": "Outlet turbidity"
+          },
+          "headloss": {
+            "name": "Head loss"
+          },
+          "backwash": {
+            "name": "Backwash"
+          }
+        },
+        "pool": {
+          "name": "Effluent Holding Pond",
+          "short": "Effluent",
+          "level": {
+            "name": "Level"
+          },
+          "discharge": {
+            "name": "Discharge flow"
+          },
+          "ph": {
+            "name": "pH"
+          },
+          "cod": {
+            "name": "COD"
+          },
+          "bod": {
+            "name": "BOD"
+          },
+          "tss": {
+            "name": "TSS"
+          },
+          "temp": {
+            "name": "Temperature"
+          }
+        },
+        "panel": {
+          "name": "WWTP Control Panel",
+          "short": "Panel",
+          "mode": {
+            "name": "AUTO mode"
+          },
+          "kw": {
+            "name": "Total power"
+          },
+          "volt": {
+            "name": "Voltage"
+          }
+        }
+      }
+    },
+    "electrical_points": {
+      "electrical_points": {
+        "power": {
+          "name": "Main Power Meter",
+          "location": "Factory front (utility intake)"
+        },
+        "tr1": {
+          "name": "Transformer 1",
+          "location": "Transformer row (front gate)"
+        },
+        "tr2": {
+          "name": "Transformer 2",
+          "location": "Transformer row"
+        },
+        "tr3": {
+          "name": "Transformer 3",
+          "location": "Transformer row"
+        },
+        "tr4": {
+          "name": "Transformer 4",
+          "location": "Transformer row"
+        },
+        "tr5": {
+          "name": "Transformer 5",
+          "location": "Transformer row (inner)"
+        },
+        "b5chiller": {
+          "name": "Chiller – Bldg 5 Roof",
+          "location": "Building 5 rooftop"
+        },
+        "chiller": {
+          "name": "Chiller – Warehouse Yard",
+          "location": "Beside the warehouse"
+        },
+        "cda": {
+          "name": "CDA Room",
+          "location": "Factory building (utility room)"
+        }
+      }
+    },
+    "water_tanks": {
+      "tank_groups": {
+        "supply": {
+          "name": "Water Supply",
+          "desc": "Tap-water storage tanks and ponds"
+        },
+        "pw": {
+          "name": "Purified Water",
+          "desc": "PW storage tank and distribution loop"
+        },
+        "effluent": {
+          "name": "Effluent",
+          "desc": "Treated effluent holding pond"
+        }
+      },
+      "tank_sites": {
+        "pump": {
+          "name": "Factory Water-Supply Tanks",
+          "location": "Water storage & pump system",
+          "unit_count": "2 interconnected tanks"
+        },
+        "tank14": {
+          "name": "Bldg 1, 4 Water Tank",
+          "location": "Building 4 (car park)"
+        },
+        "b5tank": {
+          "name": "Bldg 5 Rooftop Tanks",
+          "location": "Building 5 rooftop",
+          "unit_count": "4 tanks"
+        },
+        "whtank": {
+          "name": "Warehouse Rooftop Tanks",
+          "location": "Warehouse rooftop",
+          "unit_count": "2 stainless tanks"
+        },
+        "pwtank": {
+          "name": "PW Tank (Distribution Loop)",
+          "location": "Purified Water system room"
+        },
+        "pool": {
+          "name": "Effluent Holding Pond",
+          "location": "Canteen pond"
+        }
+      }
+    },
+    "electrical_report": {
+      "el_groups": {
+        "el_main": {
+          "name": "Main Meter"
+        },
+        "el_tr": {
+          "name": "Transformers"
+        },
+        "el_load": {
+          "name": "Major Loads (Chiller / CDA)"
+        }
+      }
+    },
+    "utility_alarms": {
+      "groups": {
+        "water": {
+          "station": {
+            "name": "Factory Supply Ponds",
+            "desc": "Pond 1–2 level · supply line pressure · inlet valve · controller"
+          },
+          "pumps": {
+            "name": "Supply Pumps",
+            "desc": "Trip status · motor current · dry-run protection"
+          },
+          "tanks": {
+            "name": "Storage Tanks & Ponds",
+            "desc": "Water level of storage tanks across buildings"
+          },
+          "meter": {
+            "name": "Water Meter",
+            "desc": "Flow rate · daily usage · night-time leak detection"
+          }
+        },
+        "electrical": {
+          "main": {
+            "name": "Main Power Meter",
+            "desc": "Voltage · frequency · demand · power loss / phase loss"
+          },
+          "transformer": {
+            "name": "Transformers",
+            "desc": "Voltage · % load vs kVA rating · current unbalance · PF"
+          },
+          "chiller": {
+            "name": "Chillers",
+            "desc": "Power · voltage · current unbalance · PF"
+          },
+          "utility": {
+            "name": "Utility (CDA)",
+            "desc": "Compressed dry air room"
+          }
+        }
+      },
+      "water": {
+        "dev": {
+          "station": "Factory Supply Ponds",
+          "main_meter": "Main Water Meter",
+          "pump1": "Pump 1",
+          "pump2": "Pump 2",
+          "pumps": "Pump System"
+        },
+        "m": {
+          "pond1_level": "Pond 1 Level",
+          "pond2_level": "Pond 2 Level",
+          "line_pressure": "Supply Line Pressure",
+          "valve_fault": "Inlet Valve Fault",
+          "controller_comm": "Controller Communication (MQTT)",
+          "pump_trip": "Pump Fault (Overload Trip)",
+          "pump_current": "Motor Current",
+          "dry_run": "Pump Dry Run (low pond level)",
+          "level": "Water Level",
+          "flow": "Flow Rate",
+          "night_flow": "Night Flow (leak detection)",
+          "daily": "Daily Usage"
+        }
+      },
+      "electrical": {
+        "m": {
+          "voltage": "Voltage L-L",
+          "load": "Load vs Rating",
+          "demand": "Power Demand",
+          "unbalance": "Current Unbalance",
+          "pf": "Power Factor",
+          "freq": "Frequency",
+          "phase_loss": "Power / Phase Loss",
+          "comm": "Meter Communication"
+        }
+      },
+      "wastewater": {
+        "stage_desc": "Treatment stage {{n}}",
+        "panel_desc": "Control panel · power · communication",
+        "trip_of": "{{name}} Fault",
+        "comm": "Control Panel PLC Communication"
+      },
+      "state": {
+        "trip": "Trip",
+        "fault": "Fault",
+        "offline": "Offline",
+        "active": "Active"
+      }
+    }
+  },
+  "form": {
+    "dropzone": {
+      "drop_here": "Drop Files Here",
+      "title": "Drag & Drop Files Here",
+      "subtitle": "Drag and drop PNG, JPG images here"
+    }
+  },
+  "water_systems": {
+    "detail": {
+      "total_level": "Total level",
+      "volume": "Water volume",
+      "capacity": "Capacity",
+      "depth": "Water depth",
+      "free": "Free space",
+      "never": "No data yet",
+      "unit_count": "{{n}} {{unit}}",
+      "scene_hint": "Drag to rotate · scroll to zoom · double-click to reset",
+      "gauge_title": "Level against limits",
+      "low_limit": "Low limit",
+      "high_limit": "High limit",
+      "tanks_title": "Each of the {{unit}}",
+      "equipment": "Equipment and sensors",
+      "trends": "Trends"
+    },
+    "water_color": "Water colour",
+    "water_color_reset": "Back to blue",
+    "add_btn": "Add system",
+    "delete_btn": "Delete system",
+    "name": "Name",
+    "location": "Location",
+    "topic": "Controller MQTT topic",
+    "unit": "Unit",
+    "save": "Save",
+    "cancel": "Cancel",
+    "not_found": "not found",
+    "kind": {
+      "tank": {
+        "name": "Water tank",
+        "desc": "Covered cylindrical tank",
+        "unit": "tanks",
+        "name_ph": "e.g. Building 5 rooftop tank"
+      },
+      "pond": {
+        "name": "Storage pond",
+        "desc": "Open-top rectangular pond",
+        "unit": "ponds",
+        "name_ph": "e.g. Holding pond behind Building 4"
+      }
+    },
+    "connect": {
+      "title": "Add water tank / storage pond",
+      "intro": "Connect to the controller first, then choose where the water level value is in the data it sends.",
+      "step_what": "1. Type and name",
+      "step_connect": "2. Connect",
+      "step_level": "3. Water level value",
+      "broker_hint": "The default is the system's base broker. You can change it to another broker (must be ws:// or wss://).",
+      "username": "Username",
+      "password": "Password",
+      "connect_btn": "Connect",
+      "using_default": "Using the system's base broker",
+      "using_custom": "Using a custom broker",
+      "reset_default": "Back to the base values",
+      "st_connecting": "Connecting to the broker…",
+      "st_waiting": "Connected. Waiting for a message on this topic…",
+      "st_data": "Connected. Found {{n}} values on this topic",
+      "st_failed": "Could not connect to the broker. Retrying automatically.",
+      "st_slow": "This is taking longer than usual. Check the broker address, username, password, and that the controller is on.",
+      "err_unsupported_url": "A browser can reach MQTT only over WebSocket. The broker address must start with ws:// or wss://",
+      "err_bridge": "The development bridge has not reached the broker yet",
+      "level_hint": "Choose from the values found in the latest message (current value shown after each)",
+      "level_hint_no_data": "No message has arrived to scan yet. You can type the location, e.g. water_level.level_cm",
+      "level_now": "Current value at this location: {{value}} {{unit}}",
+      "level_not_number": "This location has no numeric value in the latest message",
+      "create_needs_connect": "Connect successfully before creating",
+      "create_note": "Tank size, other sensors and pumps can be set on the system's page after creating",
+      "create_btn": "Create"
+    },
+    "path": {
+      "label": "Data location",
+      "pick": "— Select a data location —",
+      "custom": "Type it in…",
+      "back_to_list": "Choose from the scanned list",
+      "not_in_data": "not in the latest message"
+    },
+    "level_path": "Level value location in the data",
+    "level_unit": "Unit sent",
+    "limits": "Low – high limit (%)",
+    "tank_count": "Number of {{unit}}",
+    "total_capacity": "Total capacity {{m3}} m³",
+    "tanks_connected_note": "All units are connected and share one water surface, measured by a single level sensor",
+    "tank_name": "Name",
+    "shape": "Shape",
+    "shape_rect": "Rectangular",
+    "shape_cylinder": "Cylinder",
+    "width_m": "Width (m)",
+    "length_m": "Length (m)",
+    "diameter_m": "Diameter (m)",
+    "height_m": "Height (m)",
+    "offset_cm": "Floor lower by (cm)",
+    "offset_hint": "How many centimetres this unit's floor is below the first one's floor (negative = higher)",
+    "offset_value": "floor {{cm}} cm below the first",
+    "sensor_tank": "Level sensor installed in",
+    "sensor_here": "level sensor here",
+    "sensor": {
+      "level": "Level sensor",
+      "meterTotal": "Water meter: volume used",
+      "flowRate": "Water meter: flow rate",
+      "inletValve": "Inlet valve"
+    },
+    "sensor_desc": {
+      "level": "Level, volume and percent, plus the 3D view",
+      "meterTotal": "Accumulated volume",
+      "flowRate": "Instantaneous flow rate",
+      "inletValve": "Open/closed state"
+    },
+    "pump_count": "Number of pumps",
+    "pump_name": "Pump name",
+    "pump_drive": "Type",
+    "pump_fault_path": "Overload signal location (optional)",
+    "drive": {
+      "inverter": "Inverter",
+      "magnetic": "Magnetic"
+    },
+    "settings": {
+      "open_btn": "Settings / add sensors",
+      "title": "System settings",
+      "intro": "Adjust tank size, enable sensors and add pumps. The page shows only what is enabled.",
+      "has_errors": "Some fields are missing or invalid. See the red messages below.",
+      "tanks": "{{unit}} and size",
+      "preview_needs_dims": "Fill in all sizes to see the 3D preview",
+      "sensors": "Sensors",
+      "sensors_hint": "Enable only what is installed, then choose the data location from the values found in the latest message.",
+      "sensors_hint_no_data": "Enable only what is installed. No message has arrived to scan yet, so type the data location, e.g. water_level.level_cm",
+      "pumps": "Pumps",
+      "pumps_hint": "Inverter shows frequency and current. Magnetic shows only run/stop.",
+      "pump_path_hint_inverter": "Point to the pump's data block, e.g. pump1 (with running, freq, current, alarm)",
+      "pump_path_hint_magnetic": "Point to the run/stop value, e.g. controls.pump1_on",
+      "pump_fault_hint": "Use when the overload signal is separate from the pump data",
+      "general": "General and connection",
+      "custom_broker": "Use a custom MQTT broker",
+      "connection_note": "If you change the broker or topic, save first; the data location list is then scanned from the new source."
+    },
+    "scene": {
+      "title": "3D water level",
+      "loading": "Loading 3D view…",
+      "rotate": "Auto-rotate",
+      "reset": "Reset view",
+      "no_level": "No water level value yet"
+    },
+    "error": {
+      "name_required": "Enter a name",
+      "broker_invalid": "The broker address must start with ws:// or wss://",
+      "topic_required": "Enter the MQTT topic",
+      "topic_invalid": "The topic must not contain spaces, # or +, and must not start or end with /",
+      "tanks_count": "The number must be between 1 and 4",
+      "tanks_invalid": "Every unit needs a name and sizes greater than 0",
+      "sensor_path_required": "An enabled sensor needs a data location (dot-separated, no empty parts)",
+      "pump_name_required": "Enter a name for every pump",
+      "pump_path_required": "Each pump needs a valid data location (dot-separated, no empty parts)",
+      "limits_invalid": "Limits must be within 0–100 and low must be less than high",
+      "save_failed": "Save failed — server unreachable or no permission",
+      "load_failed": "Could not load water systems from the server",
+      "delete_failed": "Delete failed — server unreachable or no permission",
+      "probe_failed": "The server could not connect to this broker",
+      "probe_no_message": "Connected, but no message has arrived on this topic yet",
+      "unsaved_broker": "A custom broker delivers live data after the system is saved",
+      "broker_offline": "The server is not connected to the broker yet",
+      "unauthorized": "Session expired — please sign in again"
+    },
+    "confirm": {
+      "delete_title": "Delete this system?",
+      "delete": "Remove \"{{name}}\" from the water menu. This cannot be undone (the controller is not affected)."
+    },
+    "not_exist": "System not found",
+    "not_exist_desc": "It may have been deleted, or it was added in another device's browser.",
+    "no_topic": "MQTT topic not set",
+    "no_topic_title": "Sensor not connected yet",
+    "no_topic_desc": "Open “Settings / add sensors” and set the controller’s MQTT broker, topic and the level path in its data",
+    "no_data_title": "No data from the controller yet",
+    "no_data_desc": "Waiting for a message on topic {{topic}}. Check that the controller is on and uses the same topic.",
+    "level_not_found": "The latest message has no numeric value at {{path}}. Check the data location in the settings.",
+    "no_level_sensor": "The level sensor is disabled, so there is no level or volume to show.",
+    "total_title": "Total of all {{n}} {{unit}}",
+    "pump_fault_count": "{{n}} pump(s) faulted",
+    "level_low": "Level below {{pct}}%",
+    "level_high": "Level above {{pct}}%",
+    "add_more_hint": "No other sensors or pumps yet. Click here to add a water meter, inlet valve or pump.",
+    "trend_title": "Level trend",
+    "trend_empty": "The chart starts once at least 2 readings have arrived",
+    "trend_note": "Latest {{n}} points since this page was opened (not historical data). Dashed lines are the {{low}}% and {{high}}% limits.",
+    "retry": "Retry"
+  },
+  "pw_dashboard": {
+    "eyebrow": "Purified water system",
+    "kpi_reading": "Sensor reading",
+    "max_range": "Sensor max range",
+    "temperature": "Temperature",
+    "limits": "Alert limits",
+    "no_limits": "Not set",
+    "overall_normal": "All normal",
+    "overall_attention": "{{n}} need attention",
+    "no_data_title": "No sensor data yet",
+    "no_data_desc": "Waiting for sensor values from MQTT — set the broker and each sensor's topic / field in Purified Water → Settings Devices",
+    "trend_level": "PW tank level trend",
+    "trend_conduct": "Loop conductivity trend",
+    "status": {
+      "normal": "Normal",
+      "warning": "Out of limit",
+      "under_range": "Under range",
+      "over_range": "Over range",
+      "no_signal": "No signal",
+      "inactive": "Inactive",
+      "waiting": "Waiting"
+    }
+  },
+  "utility_alarms": {
+    "severity": {
+      "critical": "Critical",
+      "warning": "Warning",
+      "info": "Info"
+    },
+    "level": {
+      "state": "STATE",
+      "comm": "COMM"
+    },
+    "dur": {
+      "s": "{{s}}s",
+      "m": "{{m}} min",
+      "hm": "{{h}}h {{m}}m",
+      "dh": "{{d}}d {{h}}h"
+    },
+    "channel": {
+      "notifyWeb": "Web notification",
+      "notifyLine": "LINE notification",
+      "notifyEmail": "Email notification"
+    },
+    "channel_short": {
+      "notifyWeb": "Web",
+      "notifyLine": "LINE",
+      "notifyEmail": "Email"
+    },
+    "page": {
+      "water": {
+        "report_title": "Alarm Report — Water Supply",
+        "settings_title": "Alarm Settings — Water Supply"
+      },
+      "electrical": {
+        "report_title": "Alarm Report — Electrical",
+        "settings_title": "Alarm Settings — Electrical"
+      },
+      "wastewater": {
+        "report_title": "Alarm Report — Wastewater Treatment",
+        "settings_title": "Alarm Settings — Wastewater Treatment"
+      },
+      "report_sub": "Sensor alarm history by group · acknowledge · export CSV",
+      "settings_sub": "Set alarm limits (LL / L / H / HH) and notification channels for sensors, by group",
+      "report_mock": "Alarm history is simulated (acknowledgements are kept in this browser) — will switch to API data once real sensors are connected",
+      "settings_mock": "Settings are saved in this browser (localStorage) and current values are simulated — will move to the server once the API is ready"
+    },
+    "report": {
+      "range": {
+        "label": "Period",
+        "24h": "24 h",
+        "7d": "7 days",
+        "30d": "30 days",
+        "custom": "Custom"
+      },
+      "from": "From",
+      "to": "To",
+      "severity": "Severity",
+      "status": "Status",
+      "all": "All",
+      "status_opt": {
+        "all": "All",
+        "active": "Active",
+        "ended": "Cleared",
+        "unack": "Unacknowledged",
+        "ack": "Acknowledged"
+      },
+      "search": "Search",
+      "search_ph": "Sensor / device name",
+      "reset": "Clear filters",
+      "go_settings": "Alarm settings",
+      "all_groups": "All groups",
+      "kpi": {
+        "total": "Total alarms",
+        "active": "Active now",
+        "critical": "Critical",
+        "warning": "Warning",
+        "unack": "Unacknowledged",
+        "mttr": "Mean time to clear"
+      },
+      "chart_title": "Alarms over time",
+      "chart_sub": "By severity (current filters)",
+      "top_title": "Most frequent sensors",
+      "top_sub": "Red = critical · orange = warning",
+      "table_title": "Alarm events ({{n}})",
+      "col": {
+        "start": "Started",
+        "sensor": "Sensor / device",
+        "group": "Group",
+        "level": "Level",
+        "value": "Value / limit",
+        "end": "Cleared",
+        "duration": "Duration",
+        "ack": "Ack"
+      },
+      "active_badge": "Active",
+      "ack": "Acknowledge",
+      "ack_selected": "Acknowledge selected ({{n}})",
+      "ack_confirm_title": "Acknowledge alarms",
+      "ack_confirm_text": "Acknowledge {{n}} alarms?",
+      "ack_done": "{{n}} alarm(s) acknowledged",
+      "empty": "No alarms found",
+      "empty_sub": "Try another period or filter",
+      "rows": "Rows",
+      "page_of": "Page {{p}} / {{n}}",
+      "ack_failed": "Acknowledge failed — server unreachable",
+      "ack_forbidden": "This account lacks the alarm:acknowledge permission",
+      "server_events_failed": "Could not load real events from the server — showing simulated data only"
+    },
+    "settings": {
+      "readonly": "Read-only — only administrators can change alarm settings",
+      "stat": {
+        "groups": "Sensor groups",
+        "sensors": "Monitoring points",
+        "enabled": "Alarms enabled",
+        "alarming": "Out of limits now"
+      },
+      "legend_title": "Alarm levels",
+      "legend_hhll": "Critical limit exceeded (High-High / Low-Low)",
+      "legend_hl": "Warning limit exceeded (High / Low)",
+      "legend_state": "Status sensors (Trip/Fault) and communication loss",
+      "legend_note": "Leave a limit empty to disable it · limits must be LL < L < H < HH · value must stay out of limits longer than the delay before alarming",
+      "targets_title": "Recipients for this system",
+      "targets_sub": "Used by sensors with LINE / email enabled",
+      "emails": "Email recipients (comma separated)",
+      "line": "LINE (group / recipient)",
+      "line_ph": "e.g. Maintenance group",
+      "quiet": "Quiet hours for LINE/email",
+      "critical_ignores_quiet": "Critical alarms still notify during quiet hours",
+      "search_ph": "Search sensor / device",
+      "only_alarm": "Only out of limits now",
+      "expand_all": "Expand all",
+      "collapse_all": "Collapse all",
+      "go_report": "Alarm report",
+      "reset_defaults": "Restore defaults",
+      "reset_title": "Restore all defaults?",
+      "reset_text": "Limits and channels of every sensor in this system will return to defaults (not saved until you press Save)",
+      "enabled_of": "On {{a}}/{{b}}",
+      "alarming_n": "{{n}} out of limits",
+      "group_channels": "Channels for the whole group",
+      "group_toggle": "Enable/disable whole group",
+      "col": {
+        "on": "On",
+        "sensor": "Sensor",
+        "now": "Current",
+        "delay": "Delay (s)",
+        "channels": "Channels"
+      },
+      "normal": "Normal",
+      "alarm_when": "Alarm when",
+      "advanced": "Advanced settings",
+      "order_hint": "Limits must be in ascending order: LL < L < H < HH",
+      "unsaved": "You have unsaved changes",
+      "has_errors": "{{n}} invalid entries",
+      "discard": "Discard",
+      "save": "Save",
+      "saved": "Alarm settings saved",
+      "invalid_title": "Invalid limits",
+      "invalid_text": "{{n}} sensor(s) have limits out of order, e.g. {{name}} — must be LL < L < H < HH",
+      "deadband": "Deadband",
+      "deadband_hint": "Value must return inside the limit by this margin to clear the alarm (prevents chattering)",
+      "trigger_on": "Alarm state",
+      "trigger_hint": "Digital value from the device that means fault",
+      "delay": "Delay (seconds)",
+      "delay_hint": "Value must stay out of limits this long before alarming",
+      "repeat": "Repeat every (min)",
+      "repeat_hint": "Re-notify while unacknowledged · 0 = off",
+      "save_alarm": "Save to alarm history",
+      "done": "Done",
+      "save_failed": "Could not save settings — server unreachable or no permission",
+      "load_failed": "Could not load settings from the server — editing is disabled until it loads"
+    }
+  }
+}

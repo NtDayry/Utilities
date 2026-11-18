@@ -1,0 +1,13 @@
+.venv/
+**/__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+storage/
+logs/
+tests/
+nginx/
+mosquitto/
+init-db/
+modbus_service/

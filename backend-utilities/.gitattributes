@@ -1,0 +1,8 @@
+# ไฟล์ที่รันใน Linux container ต้องเป็น LF เสมอ (CRLF ทำให้ /bin/sh และ mosquitto อ่านผิด)
+*.sh text eol=lf
+*.conf text eol=lf
+*.template text eol=lf
+*.sql text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+.env* text eol=lf

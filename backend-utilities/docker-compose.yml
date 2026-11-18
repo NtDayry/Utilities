@@ -1,0 +1,210 @@
+# =====================================================================
+# Utilities stack — ระบบทั้งหมด (แทน docker-compose.yml เดิมของ PurifiedWater)
+#   utilities-api      FastAPI: login/users/roles/audit/sensors/alerts/backup (เดิม) + ระบบน้ำ/MQTT (ใหม่)
+#   utilities-db       PostgreSQL 16 + TimescaleDB
+#   utilities-redis    cache ของ login / สิทธิ์ / sensor config
+#   utilities-mqtt     Mosquitto (+ bridge ไป broker เดิม)
+#   utilities-nginx    HTTPS + frontend-utilities (build ใน Docker)
+#   modbus-reader      อ่าน RS485 (profile: modbus — ปิดอยู่: Purified Water รับค่าทาง MQTT แล้ว)
+#   portainer
+#
+# ก่อนเริ่มครั้งแรก: หยุด stack เดิมก่อน (ใช้ฐานข้อมูล/พอร์ตชุดเดียวกัน)
+#   cd D:\Utilities && docker compose down
+#   cd D:\Utilities\backend-utilities && docker compose up -d --build
+#
+# ข้อมูลถาวรอยู่ใต้ ${STORAGE_ROOT} (ค่าเริ่มต้น ../storage = โฟลเดอร์ข้อมูลเดิม จึงได้ผู้ใช้/ประวัติเดิมทั้งหมด)
+# =====================================================================
+name: utilities
+
+x-tz: &tz
+  TZ: ${TZ:-Asia/Bangkok}
+
+services:
+  utilities-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: utilities-api
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      <<: *tz
+      APP_ENV: production
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:?}:${POSTGRES_PASSWORD:?}@utilities-db:5432/${POSTGRES_DB:?}
+      REDIS_URL: redis://utilities-redis:6379/0
+      DEFAULT_MQTT_URL: ${DEFAULT_MQTT_URL:-mqtt://utilities-mqtt:1883}
+      DEFAULT_MQTT_USERNAME: ${DEFAULT_MQTT_USERNAME:-${MQTT_USERNAME:-}}
+      DEFAULT_MQTT_PASSWORD: ${DEFAULT_MQTT_PASSWORD:-${MQTT_PASSWORD:-}}
+      # psutil อ่านค่า CPU / RAM / Network ของเครื่อง host (หน้า System Monitor)
+      HOST_PROC: /host/proc
+      HOST_SYS: /host/sys
+    volumes:
+      - ./app:/app/app:ro
+      - ./assets:/app/assets:ro
+      - ${STORAGE_ROOT:-../storage}:/app/storage
+      - ./logs/api:/app/logs
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+    expose:
+      - "8000"
+    depends_on:
+      utilities-db:
+        condition: service_healthy
+      utilities-redis:
+        condition: service_healthy
+      utilities-mqtt:
+        condition: service_healthy
+    networks: [utilities]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  utilities-db:
+    image: timescale/timescaledb:latest-pg16
+    container_name: utilities-db
+    restart: unless-stopped
+    environment:
+      <<: *tz
+      # ใช้ตอนสร้างฐานข้อมูลใหม่เท่านั้น — ถ้าใช้โฟลเดอร์ข้อมูลเดิม ต้องตรงกับ user/รหัสผ่าน/ชื่อฐานข้อมูลเดิม
+      POSTGRES_USER: ${POSTGRES_USER:?}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?}
+      POSTGRES_DB: ${POSTGRES_DB:?}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    shm_size: "256mb"
+    volumes:
+      - ${STORAGE_ROOT:-../storage}/database/postgres/data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d:ro
+    networks: [utilities]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  utilities-redis:
+    image: redis:7-alpine
+    container_name: utilities-redis
+    restart: unless-stopped
+    environment: *tz
+    volumes:
+      - ${STORAGE_ROOT:-../storage}/redis:/data
+    networks: [utilities]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  utilities-mqtt:
+    image: eclipse-mosquitto:2
+    container_name: utilities-mqtt
+    restart: unless-stopped
+    entrypoint: ["/bin/sh", "/utilities-entrypoint.sh"]
+    environment:
+      <<: *tz
+      MQTT_USERNAME: ${MQTT_USERNAME:-}
+      MQTT_PASSWORD: ${MQTT_PASSWORD:-}
+      MQTT_BRIDGE_ADDRESS: ${MQTT_BRIDGE_ADDRESS:-}
+      MQTT_BRIDGE_USERNAME: ${MQTT_BRIDGE_USERNAME:-}
+      MQTT_BRIDGE_PASSWORD: ${MQTT_BRIDGE_PASSWORD:-}
+      MQTT_BRIDGE_TOPICS: ${MQTT_BRIDGE_TOPICS:-}
+    ports:
+      - "${MQTT_PORT:-1883}:1883"
+      - "${MQTT_WS_PORT:-9001}:9001"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config:ro
+      - ./mosquitto/docker-entrypoint.sh:/utilities-entrypoint.sh:ro
+      - ${STORAGE_ROOT:-../storage}/mosquitto:/mosquitto/data
+      - ./logs/mosquitto:/mosquitto/log
+    networks: [utilities]
+    healthcheck:
+      test: ["CMD-SHELL", "mosquitto_sub -h 127.0.0.1 -p 1883 $${MQTT_USERNAME:+-u \"$$MQTT_USERNAME\" -P \"$$MQTT_PASSWORD\"} -t '$$SYS/broker/uptime' -C 1 -W 5 > /dev/null"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
+
+  # HTTPS + หน้าเว็บ: build frontend-utilities ภายใน Docker (frontend/Dockerfile) — แก้หน้าเว็บแล้ว `docker compose up -d --build utilities-nginx`
+  utilities-nginx:
+    build:
+      context: ${FRONTEND_SRC:-../frontend-utilities}
+      dockerfile: ${FRONTEND_DOCKERFILE:-../backend-utilities/frontend/Dockerfile}
+      args:
+        VITE_PROJECT_NAME: ${FRONTEND_PROJECT_NAME:-Utilities System}
+        VITE_MQTT_WATER_URL: ${DEFAULT_MQTT_URL:-mqtt://utilities-mqtt:1883}
+    image: utilities-nginx:local
+    container_name: utilities-nginx
+    restart: unless-stopped
+    environment:
+      <<: *tz
+      HTTPS_PORT: ${HTTPS_PORT:-443}
+    ports:
+      - "${HTTP_PORT:-80}:80"
+      - "${HTTPS_PORT:-443}:443"
+    volumes:
+      - ./nginx/templates:/etc/nginx/templates:ro
+      - ${SSL_DIR:-./nginx/ssl}:/etc/nginx/ssl:ro
+      - ./logs/nginx:/var/log/nginx
+    depends_on:
+      utilities-api:
+        condition: service_healthy
+    networks: [utilities]
+
+  # (เลิกใช้) อ่าน RS485 ทุก 1 วินาที → WebSocket /ws/sensor-ingest + บันทึกค่ารายนาที
+  # Purified Water รับค่าทาง MQTT แล้ว (ตั้งค่าในหน้า purified-water/settings) — ห้ามเปิดพร้อมกัน ค่าจะซ้ำ
+  # เปิดกลับด้วย COMPOSE_PROFILES=modbus ใน .env
+  modbus-reader:
+    profiles: ["modbus"]
+    build:
+      context: ./modbus_service
+      dockerfile: Dockerfile
+    container_name: modbus-reader
+    restart: unless-stopped
+    volumes:
+      - ./modbus_service:/app
+    devices:
+      - ${SERIAL_DEVICE:-/dev/ttyACM0}:/dev/ttyACM0
+    group_add:
+      - dialout
+    env_file:
+      - .env
+    environment:
+      <<: *tz
+      API_BASE_URL: http://utilities-api:8000/api
+      WS_URL: ws://utilities-api:8000/ws/sensor-ingest
+      REDIS_URL: redis://utilities-redis:6379/0
+      SERIAL_PORT: /dev/ttyACM0
+      BAUD_RATE: ${BAUD_RATE:-9600}
+      POLL_INTERVAL: "1"
+      AGGREGATE_INTERVAL: "60"
+    depends_on:
+      utilities-api:
+        condition: service_healthy
+    networks: [utilities]
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: unless-stopped
+    ports:
+      - "9443:9443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    networks: [utilities]
+
+volumes:
+  # volume เดิมของ stack PurifiedWater (ข้อมูล/บัญชี Portainer เดิม)
+  portainer_data:
+    name: ${PORTAINER_VOLUME:-purifiedwater_portainer_data}
+
+networks:
+  utilities:
+    name: utilities

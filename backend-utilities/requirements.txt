@@ -1,0 +1,20 @@
+# ---- ระบบหลัก (เดิมจาก pyproject.toml ของ PurifiedWater — คงเวอร์ชันเดิม) ----
+fastapi==0.136.1
+uvicorn[standard]==0.54.0
+python-multipart
+sqlalchemy==2.0.41
+asyncpg==0.30.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+pydantic-settings>=2.0.0
+redis>=4.5.0
+aiohttp>=3.14.1
+psutil>=6.0.0
+docker>=7.0.0
+smbprotocol>=1.15.0
+paramiko>=3.4.0
+# ---- ส่วน Utilities (ระบบน้ำ / MQTT) ----
+aiomqtt==2.5.1
+paho-mqtt==2.2.0
+httpx==0.28.1
